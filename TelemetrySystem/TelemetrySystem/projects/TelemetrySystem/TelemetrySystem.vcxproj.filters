@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de origen">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Serialization">
+      <UniqueIdentifier>{e1e86e34-ff5e-43e7-a2a5-72a1213c2ee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Persistence">
+      <UniqueIdentifier>{13d72986-714f-46e9-96d7-31f22e8bfbe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Serialization\JSON">
+      <UniqueIdentifier>{23a1b22a-1b9e-46bd-a183-80357040745d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\API">
+      <UniqueIdentifier>{57ce070f-aefd-4889-a907-5a822c43c795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\API">
+      <UniqueIdentifier>{9a0862a0-f2b7-4c0c-a206-a3f5b7092eda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Serialization">
+      <UniqueIdentifier>{c0980d57-0baf-4a8e-ab22-b3559d88758c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Persistence">
+      <UniqueIdentifier>{97824d5d-5929-40fb-9bea-89dc59b23d0d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\include\Tracker.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\ISerializer.h">
+      <Filter>Archivos de encabezado\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\JSONSerializer.h">
+      <Filter>Archivos de encabezado\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\json.hpp">
+      <Filter>Archivos de encabezado\Serialization\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\TelemetryExports.h">
+      <Filter>Archivos de encabezado\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\TelemetrySystem.h">
+      <Filter>Archivos de encabezado\API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\EventData.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\DataChunk.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\FilePersistence.h">
+      <Filter>Archivos de encabezado\Persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\IPersistence.h">
+      <Filter>Archivos de encabezado\Persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\include\TelemetryConfiguration.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\cpp\Tracker.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cpp\TelemetrySystem.cpp">
+      <Filter>Archivos de origen\API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cpp\JSONSerializer.cpp">
+      <Filter>Archivos de origen\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cpp\FilePersistence.cpp">
+      <Filter>Archivos de origen\Persistence</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

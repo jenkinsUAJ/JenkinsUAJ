@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 607a5fb969c1a1b49a02b47bb1d9700c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7807037962827854997
+    second: Accion_0
+  - first:
+      213: 4180014145735596521
+    second: Accion_1
+  - first:
+      213: -8092663371851148913
+    second: Accion_2
+  - first:
+      213: -6010074014739073074
+    second: Accion_3
+  - first:
+      213: -9037983523644987370
+    second: Accion_4
+  - first:
+      213: -7100324835905468998
+    second: Accion_5
+  - first:
+      213: -3432327183500609669
+    second: Accion_6
+  - first:
+      213: -317086075349201522
+    second: Accion_7
+  - first:
+      213: -1051480913864051920
+    second: Accion_8
+  - first:
+      213: 2506509812935324278
+    second: Accion_9
+  - first:
+      213: -2338839973462354080
+    second: Accion_10
+  - first:
+      213: 7119075494258546486
+    second: Accion_11
+  - first:
+      213: 1382516648517397894
+    second: Accion_12
+  - first:
+      213: -2646118817166929236
+    second: Accion_13
+  - first:
+      213: 956529621557008732
+    second: Accion_14
+  - first:
+      213: 311409514263059006
+    second: Accion_15
+  - first:
+      213: -62796818506798694
+    second: Accion_16
+  - first:
+      213: -5821870038570458232
+    second: Accion_17
+  - first:
+      213: -2846195389958363797
+    second: Accion_18
+  - first:
+      213: -2139681407850928067
+    second: Accion_19
+  - first:
+      213: -5407074857883091675
+    second: Accion_20
+  - first:
+      213: 3139811391431759206
+    second: Accion_21
+  - first:
+      213: 168957618678315051
+    second: Accion_22
+  - first:
+      213: -5583282087512540611
+    second: Accion_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Accion_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1466
+        width: 319
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b08a51654d7a390800000000000000
+      internalID: -7807037962827854997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_1
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1468
+        width: 318
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e99da808b4620a30800000000000000
+      internalID: 4180014145735596521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_2
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 1467
+        width: 320
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f815ff14a8511bf80800000000000000
+      internalID: -8092663371851148913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_3
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 1468
+        width: 314
+        height: 598
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec7fbadb68de79ca0800000000000000
+      internalID: -6010074014739073074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_4
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1467
+        width: 320
+        height: 574
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 618ae4bded1a29280800000000000000
+      internalID: -9037983523644987370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_5
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 1468
+        width: 319
+        height: 572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab588fd4e24967d90800000000000000
+      internalID: -7100324835905468998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_6
+      rect:
+        serializedVersion: 2
+        x: 2106
+        y: 1466
+        width: 323
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b777782ac9ced50d0800000000000000
+      internalID: -3432327183500609669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_7
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 867
+        width: 321
+        height: 574
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d869bf4eb799bf0800000000000000
+      internalID: -317086075349201522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_8
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1089
+        width: 344
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 033b7090ea36861f0800000000000000
+      internalID: -1051480913864051920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_9
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 1064
+        width: 341
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6727a021569e8c220800000000000000
+      internalID: 2506509812935324278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_10
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 1046
+        width: 342
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067da439f65ca8fd0800000000000000
+      internalID: -2338839973462354080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_11
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 758
+        width: 335
+        height: 678
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 637187c81790cc260800000000000000
+      internalID: 7119075494258546486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_12
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 1061
+        width: 253
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d61f2219faf2310800000000000000
+      internalID: 1382516648517397894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_13
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 1073
+        width: 318
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca2d94d94f8174bd0800000000000000
+      internalID: -2646118817166929236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_14
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 361
+        width: 337
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c595b067f96464d00800000000000000
+      internalID: 956529621557008732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_15
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 754
+        width: 321
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a9355ad49525400800000000000000
+      internalID: 311409514263059006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_16
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 760
+        width: 315
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99a0e350a6e02ff0800000000000000
+      internalID: -62796818506798694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_17
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 756
+        width: 318
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 883a486ab00943fa0800000000000000
+      internalID: -5821870038570458232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_18
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 749
+        width: 319
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b656d246f584088d0800000000000000
+      internalID: -2846195389958363797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_19
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 744
+        width: 318
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d38a98898135e42e0800000000000000
+      internalID: -2139681407850928067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_20
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 181
+        width: 318
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52dbeed801636f4b0800000000000000
+      internalID: -5407074857883091675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_21
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 173
+        width: 318
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 665d30833d9d29b20800000000000000
+      internalID: 3139811391431759206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_22
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 56
+        width: 320
+        height: 621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28ba6b1f02485200800000000000000
+      internalID: 168957618678315051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accion_23
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 55
+        width: 304
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a730dd5823482b0800000000000000
+      internalID: -5583282087512540611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Accion_0: -7807037962827854997
+      Accion_1: 4180014145735596521
+      Accion_10: -2338839973462354080
+      Accion_11: 7119075494258546486
+      Accion_12: 1382516648517397894
+      Accion_13: -2646118817166929236
+      Accion_14: 956529621557008732
+      Accion_15: 311409514263059006
+      Accion_16: -62796818506798694
+      Accion_17: -5821870038570458232
+      Accion_18: -2846195389958363797
+      Accion_19: -2139681407850928067
+      Accion_2: -8092663371851148913
+      Accion_20: -5407074857883091675
+      Accion_21: 3139811391431759206
+      Accion_22: 168957618678315051
+      Accion_23: -5583282087512540611
+      Accion_3: -6010074014739073074
+      Accion_4: -9037983523644987370
+      Accion_5: -7100324835905468998
+      Accion_6: -3432327183500609669
+      Accion_7: -317086075349201522
+      Accion_8: -1051480913864051920
+      Accion_9: 2506509812935324278
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1482 @@
+fileFormatVersion: 2
+guid: 417f98e0f0f2d984f937d5b89ca44a23
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5898572833816749705
+    second: Marco_0
+  - first:
+      213: 6495446970679550999
+    second: Marco_1
+  - first:
+      213: 6219961838627577627
+    second: Marco_2
+  - first:
+      213: 2189251851782679489
+    second: Marco_3
+  - first:
+      213: -4952770598051600857
+    second: Marco_4
+  - first:
+      213: 7621687009608250145
+    second: Marco_5
+  - first:
+      213: -6590022438966603191
+    second: Marco_6
+  - first:
+      213: -7728472491502074562
+    second: Marco_7
+  - first:
+      213: 163538171432680860
+    second: Marco_8
+  - first:
+      213: -2977936693174745738
+    second: Marco_9
+  - first:
+      213: 4497675971009598694
+    second: Marco_10
+  - first:
+      213: -7744555998209969817
+    second: Marco_11
+  - first:
+      213: -7816353234375226544
+    second: Marco_12
+  - first:
+      213: 3869397521704581653
+    second: Marco_13
+  - first:
+      213: 8483445098277722849
+    second: Marco_14
+  - first:
+      213: -927285381446840606
+    second: Marco_15
+  - first:
+      213: -2276634131919081503
+    second: Marco_16
+  - first:
+      213: 5634442532347580356
+    second: Marco_17
+  - first:
+      213: -6841783851874441349
+    second: Marco_18
+  - first:
+      213: -3340662908148450406
+    second: Marco_19
+  - first:
+      213: 306890755184309159
+    second: Marco_20
+  - first:
+      213: 7479801483924427715
+    second: Marco_21
+  - first:
+      213: 804664890187397807
+    second: Marco_22
+  - first:
+      213: 5176177870998437398
+    second: Marco_23
+  - first:
+      213: 6215668347256407726
+    second: Marco_24
+  - first:
+      213: 8125281982289346118
+    second: Marco_25
+  - first:
+      213: -9170036250558827935
+    second: Marco_26
+  - first:
+      213: 5519049832140364725
+    second: Marco_27
+  - first:
+      213: 6518669155869268473
+    second: Marco_28
+  - first:
+      213: 7012955645255726981
+    second: Marco_29
+  - first:
+      213: -8777955588798512832
+    second: Marco_30
+  - first:
+      213: 5016731653886227843
+    second: Marco_31
+  - first:
+      213: 1239672456116260962
+    second: Marco_32
+  - first:
+      213: -9006609187908470213
+    second: Marco_33
+  - first:
+      213: 4566123503963082953
+    second: Marco_34
+  - first:
+      213: 1697576877312830166
+    second: Marco_35
+  - first:
+      213: 4776166573149903420
+    second: Marco_36
+  - first:
+      213: -927387828641507447
+    second: Marco_37
+  - first:
+      213: -8638086689373425653
+    second: Marco_38
+  - first:
+      213: 6032147822248420947
+    second: Marco_39
+  - first:
+      213: -5539324122093127013
+    second: Marco_40
+  - first:
+      213: -5708974967338009311
+    second: Marco_41
+  - first:
+      213: 8986045132377228524
+    second: Marco_42
+  - first:
+      213: -5686104442643318099
+    second: Marco_43
+  - first:
+      213: -4062328745766222307
+    second: Marco_44
+  - first:
+      213: 1665408852106293816
+    second: Marco_45
+  - first:
+      213: 2057478148936469248
+    second: Marco_46
+  - first:
+      213: 5876442708928684348
+    second: Marco_47
+  - first:
+      213: 8418119305629455687
+    second: Marco_48
+  - first:
+      213: -3573900836716331330
+    second: Marco_49
+  - first:
+      213: -3145736224503121558
+    second: Marco_50
+  - first:
+      213: -7162614775166041966
+    second: Marco_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Marco_0
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 14
+        width: 2076
+        height: 1996
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7795596724f042ea0800000000000000
+      internalID: -5898572833816749705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_1
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 771
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 714edb00b96742a50800000000000000
+      internalID: 6495446970679550999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_2
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 764
+        width: 63
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1fd1e3665eb15650800000000000000
+      internalID: 6219961838627577627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_3
+      rect:
+        serializedVersion: 2
+        x: 2309
+        y: 784
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb6f55c5f8c16e10800000000000000
+      internalID: 2189251851782679489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_4
+      rect:
+        serializedVersion: 2
+        x: 2316
+        y: 779
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 726a229c169344bb0800000000000000
+      internalID: -4952770598051600857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_5
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 771
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 123b8ec24fba5c960800000000000000
+      internalID: 7621687009608250145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_6
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 755
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 942da87d1898b84a0800000000000000
+      internalID: -6590022438966603191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_7
+      rect:
+        serializedVersion: 2
+        x: 2315
+        y: 759
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3504a75733feb490800000000000000
+      internalID: -7728472491502074562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_8
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 757
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d3677b911054200800000000000000
+      internalID: 163538171432680860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_9
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 743
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675c7b7fa5e3ca6d0800000000000000
+      internalID: -2977936693174745738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_10
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 744
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e456d64774fa6e30800000000000000
+      internalID: 4497675971009598694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_11
+      rect:
+        serializedVersion: 2
+        x: 2252
+        y: 739
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761f29f1a5fc58490800000000000000
+      internalID: -7744555998209969817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_12
+      rect:
+        serializedVersion: 2
+        x: 2373
+        y: 747
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05bc61a652cb68390800000000000000
+      internalID: -7816353234375226544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_13
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 739
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a7af78b8cd2b530800000000000000
+      internalID: 3869397521704581653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_14
+      rect:
+        serializedVersion: 2
+        x: 2235
+        y: 726
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea5f52ae504bb570800000000000000
+      internalID: 8483445098277722849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_15
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 711
+        width: 46
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eec279cbde9123f0800000000000000
+      internalID: -927285381446840606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_16
+      rect:
+        serializedVersion: 2
+        x: 2398
+        y: 712
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1efee63b155c760e0800000000000000
+      internalID: -2276634131919081503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_17
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 715
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf0eef61af813e40800000000000000
+      internalID: 5634442532347580356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_18
+      rect:
+        serializedVersion: 2
+        x: 2237
+        y: 706
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77250706d91d01a0800000000000000
+      internalID: -6841783851874441349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_19
+      rect:
+        serializedVersion: 2
+        x: 2243
+        y: 701
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9bfc7dd8c493a1d0800000000000000
+      internalID: -3340662908148450406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_20
+      rect:
+        serializedVersion: 2
+        x: 2284
+        y: 691
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3bc9f048b424400800000000000000
+      internalID: 306890755184309159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_21
+      rect:
+        serializedVersion: 2
+        x: 2341
+        y: 700
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c351c7e1d79dc760800000000000000
+      internalID: 7479801483924427715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_22
+      rect:
+        serializedVersion: 2
+        x: 2274
+        y: 677
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faa39de447eba2b00800000000000000
+      internalID: 804664890187397807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_23
+      rect:
+        serializedVersion: 2
+        x: 2286
+        y: 683
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e791f595a75d740800000000000000
+      internalID: 5176177870998437398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_24
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 686
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea68bd70e6d724650800000000000000
+      internalID: 6215668347256407726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_25
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 656
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64efc3ec9ecc2c070800000000000000
+      internalID: 8125281982289346118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_26
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 662
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1627cf37d9c7db080800000000000000
+      internalID: -9170036250558827935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_27
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 666
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbd766c49a979c40800000000000000
+      internalID: 5519049832140364725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_28
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 666
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f912e35f07f67a50800000000000000
+      internalID: 6518669155869268473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_29
+      rect:
+        serializedVersion: 2
+        x: 2399
+        y: 656
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 587b90dc006035160800000000000000
+      internalID: 7012955645255726981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_30
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 651
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041828b46ef6e2680800000000000000
+      internalID: -8777955588798512832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_31
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 647
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 385b8530cd20f9540800000000000000
+      internalID: 5016731653886227843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_32
+      rect:
+        serializedVersion: 2
+        x: 2412
+        y: 640
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26055a0e783343110800000000000000
+      internalID: 1239672456116260962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_33
+      rect:
+        serializedVersion: 2
+        x: 2231
+        y: 630
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a32f3a9a8120380800000000000000
+      internalID: -9006609187908470213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_34
+      rect:
+        serializedVersion: 2
+        x: 2293
+        y: 595
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c0184e62212e5f30800000000000000
+      internalID: 4566123503963082953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_35
+      rect:
+        serializedVersion: 2
+        x: 2277
+        y: 593
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dae52ffc210f8710800000000000000
+      internalID: 1697576877312830166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_36
+      rect:
+        serializedVersion: 2
+        x: 2278
+        y: 578
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ad1bc613a584240800000000000000
+      internalID: 4776166573149903420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_37
+      rect:
+        serializedVersion: 2
+        x: 2270
+        y: 569
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9875dc0fea14123f0800000000000000
+      internalID: -927387828641507447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_38
+      rect:
+        serializedVersion: 2
+        x: 2287
+        y: 572
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00fddc2ce95f1880800000000000000
+      internalID: -8638086689373425653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_39
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 566
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35663c11c7e76b350800000000000000
+      internalID: 6032147822248420947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_40
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 555
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9af2ee3f0e5023b0800000000000000
+      internalID: -5539324122093127013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_41
+      rect:
+        serializedVersion: 2
+        x: 2286
+        y: 564
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d7830c385a5c0b0800000000000000
+      internalID: -5708974967338009311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_42
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 546
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce409f21078d4bc70800000000000000
+      internalID: 8986045132377228524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_43
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 549
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa797cb226e611b0800000000000000
+      internalID: -5686104442643318099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_44
+      rect:
+        serializedVersion: 2
+        x: 2228
+        y: 523
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d160fb36785bf97c0800000000000000
+      internalID: -4062328745766222307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_45
+      rect:
+        serializedVersion: 2
+        x: 2251
+        y: 533
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 832369bf688bc1710800000000000000
+      internalID: 1665408852106293816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_46
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 532
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b8c78b971ad8c10800000000000000
+      internalID: 2057478148936469248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_47
+      rect:
+        serializedVersion: 2
+        x: 2323
+        y: 525
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c31e0a052815d8150800000000000000
+      internalID: 5876442708928684348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_48
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 29
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 745d6e848ea23d470800000000000000
+      internalID: 8418119305629455687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_49
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 3
+        width: 39
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe3d05df14f66ec0800000000000000
+      internalID: -3573900836716331330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_50
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 11
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a69b96512991854d0800000000000000
+      internalID: -3145736224503121558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Marco_51
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 13
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2908347afc7499c90800000000000000
+      internalID: -7162614775166041966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Marco_0: -5898572833816749705
+      Marco_1: 6495446970679550999
+      Marco_10: 4497675971009598694
+      Marco_11: -7744555998209969817
+      Marco_12: -7816353234375226544
+      Marco_13: 3869397521704581653
+      Marco_14: 8483445098277722849
+      Marco_15: -927285381446840606
+      Marco_16: -2276634131919081503
+      Marco_17: 5634442532347580356
+      Marco_18: -6841783851874441349
+      Marco_19: -3340662908148450406
+      Marco_2: 6219961838627577627
+      Marco_20: 306890755184309159
+      Marco_21: 7479801483924427715
+      Marco_22: 804664890187397807
+      Marco_23: 5176177870998437398
+      Marco_24: 6215668347256407726
+      Marco_25: 8125281982289346118
+      Marco_26: -9170036250558827935
+      Marco_27: 5519049832140364725
+      Marco_28: 6518669155869268473
+      Marco_29: 7012955645255726981
+      Marco_3: 2189251851782679489
+      Marco_30: -8777955588798512832
+      Marco_31: 5016731653886227843
+      Marco_32: 1239672456116260962
+      Marco_33: -9006609187908470213
+      Marco_34: 4566123503963082953
+      Marco_35: 1697576877312830166
+      Marco_36: 4776166573149903420
+      Marco_37: -927387828641507447
+      Marco_38: -8638086689373425653
+      Marco_39: 6032147822248420947
+      Marco_4: -4952770598051600857
+      Marco_40: -5539324122093127013
+      Marco_41: -5708974967338009311
+      Marco_42: 8986045132377228524
+      Marco_43: -5686104442643318099
+      Marco_44: -4062328745766222307
+      Marco_45: 1665408852106293816
+      Marco_46: 2057478148936469248
+      Marco_47: 5876442708928684348
+      Marco_48: 8418119305629455687
+      Marco_49: -3573900836716331330
+      Marco_5: 7621687009608250145
+      Marco_50: -3145736224503121558
+      Marco_51: -7162614775166041966
+      Marco_6: -6590022438966603191
+      Marco_7: -7728472491502074562
+      Marco_8: 163538171432680860
+      Marco_9: -2977936693174745738
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

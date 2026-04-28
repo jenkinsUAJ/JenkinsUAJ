@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/FinalMenus/MainMenu.unity
+    guid: 4c2719dcc399e764da3703776503896f
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/01_Basicos/Basico_01.unity
+    guid: add5963d6784e184a8dafe826000dd03
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/01_Basicos/Basico_02.unity
+    guid: 86a3139f378f21345a92a6745903cf2c
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/01_Basicos/Basico_03.unity
+    guid: 9d67523c869dba542adc714d83da965c
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/01_Basicos/Basico_04.unity
+    guid: 1efe4a619873ac344b84463697324e04
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/01_Basicos/Basico_05.unity
+    guid: 2b65a209af0e81241b17475aa1413920
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/01_Basicos/Basico_06.unity
+    guid: 2d60bffadad426c438e8aa5e96de0123
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/01_Basicos/Basico_07.unity
+    guid: fd1516c18c785c4419e40230490f840a
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/01_Basicos/Basico_08.unity
+    guid: 0d5fc520329804840876d4e88103f709
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/01_Basicos/Basico_09.unity
+    guid: ff38f01d7603c5f4b937c0f8b0eea2f5
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/01_Basicos/Basico_10.unity
+    guid: 9b0e7f20baafbfe45b0bb44adf24a78f
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/02_Roca/Roca_01.unity
+    guid: 9a40b1cceea81d344962b2ddc20f93be
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/02_Roca/Roca_02.unity
+    guid: d563994794546a547bfe6204c615fff9
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/02_Roca/Roca_03.unity
+    guid: 6e3198533bf816b44b213f5c99129f8c
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/03_Explosion/Explosion_01.unity
+    guid: a21ac00ee4521214fba78333baf8d273
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/03_Explosion/Explosion_02.unity
+    guid: 58d164a0ea13b7c41b8800d5ed6449b9
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/03_Explosion/Explosion_03.unity
+    guid: 910a124abc8a9f84ea6b41163b670385
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/04_Globo/Globo_01.unity
+    guid: 73b6851c2ac84cf4b9ea969f547daf30
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/04_Globo/Globo_02.unity
+    guid: 0d46f2d2b3e531241b0fceb73fe6391f
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/04_Globo/Globo_03.unity
+    guid: a3923068e81c19f4fa5330ab9285fdd1
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/05_Finales/Final_01.unity
+    guid: 4b0f9c66c34d8d04499815a8d9fe8535
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/05_Finales/Final_02.unity
+    guid: 4de7424886e7d8c4bb9ba3714af4ff75
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/05_Finales/Final_03.unity
+    guid: 72f764f4ee30f764a952f3563b2fef24
+  - enabled: 1
+    path: Assets/Scenes/FinalNiveles/05_Finales/Final_04.unity
+    guid: 3d2290272ecc1e14cb371e5003a7f47b
+  - enabled: 1
+    path: Assets/Scenes/FinalMenus/OptionsMenu.unity
+    guid: c415546f712b77446a484ad924ded3b7
+  - enabled: 1
+    path: Assets/Scenes/FinalMenus/LevelSelection.unity
+    guid: e6ae40cd0629a4f48bb54c7558fc5682
+  - enabled: 1
+    path: Assets/Scenes/FinalMenus/WinScene.unity
+    guid: 5177c3bf5bb7cc04fb8567a384f83b58
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 2cbe8262795423b429155ba2bb6e9982, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_UseUCBPForAssetBundles: 0

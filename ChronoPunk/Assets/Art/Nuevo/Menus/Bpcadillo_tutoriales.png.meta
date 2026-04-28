@@ -1,0 +1,975 @@
+fileFormatVersion: 2
+guid: 8aac0f1c7df99e64db123ad884267710
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8744338488246356995
+    second: Bpcadillo_tutoriales_0
+  - first:
+      213: -1804838910139546557
+    second: Bpcadillo_tutoriales_1
+  - first:
+      213: 5984114808120273682
+    second: Bpcadillo_tutoriales_2
+  - first:
+      213: 5713794071858245125
+    second: Bpcadillo_tutoriales_3
+  - first:
+      213: 6070520819788245505
+    second: Bpcadillo_tutoriales_4
+  - first:
+      213: -6647468736326303678
+    second: Bpcadillo_tutoriales_5
+  - first:
+      213: -3920214030704214380
+    second: Bpcadillo_tutoriales_6
+  - first:
+      213: -3263075188458304815
+    second: Bpcadillo_tutoriales_7
+  - first:
+      213: -3998586356299054850
+    second: Bpcadillo_tutoriales_8
+  - first:
+      213: 3552509455094618159
+    second: Bpcadillo_tutoriales_9
+  - first:
+      213: 6945441033162207763
+    second: Bpcadillo_tutoriales_10
+  - first:
+      213: 8856213889907706155
+    second: Bpcadillo_tutoriales_11
+  - first:
+      213: 3311642514533495614
+    second: Bpcadillo_tutoriales_12
+  - first:
+      213: -6266992199321804384
+    second: Bpcadillo_tutoriales_13
+  - first:
+      213: 6528599212915162552
+    second: Bpcadillo_tutoriales_14
+  - first:
+      213: 7806673168303868053
+    second: Bpcadillo_tutoriales_15
+  - first:
+      213: -4250074535120849625
+    second: Bpcadillo_tutoriales_16
+  - first:
+      213: 2057243429523672091
+    second: Bpcadillo_tutoriales_17
+  - first:
+      213: 1628938292771730966
+    second: Bpcadillo_tutoriales_18
+  - first:
+      213: 861567480327306304
+    second: Bpcadillo_tutoriales_19
+  - first:
+      213: 3281639000630867141
+    second: Bpcadillo_tutoriales_20
+  - first:
+      213: -1419254915943668858
+    second: Bpcadillo_tutoriales_21
+  - first:
+      213: -705636916781081626
+    second: Bpcadillo_tutoriales_22
+  - first:
+      213: -7949873140325493125
+    second: Bpcadillo_tutoriales_23
+  - first:
+      213: 6821865869198869139
+    second: Bpcadillo_tutoriales_24
+  - first:
+      213: -3809409880512725090
+    second: Bpcadillo_tutoriales_25
+  - first:
+      213: 4236958217852428824
+    second: Bpcadillo_tutoriales_26
+  - first:
+      213: -4503728246338645567
+    second: Bpcadillo_tutoriales_27
+  - first:
+      213: -5952251019505036877
+    second: Bpcadillo_tutoriales_28
+  - first:
+      213: -4467584321718210598
+    second: Bpcadillo_tutoriales_29
+  - first:
+      213: 903913020764108238
+    second: Bpcadillo_tutoriales_30
+  - first:
+      213: -7085825656001081988
+    second: Bpcadillo_tutoriales_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_0
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 2079
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df3bc44797ed5a680800000000000000
+      internalID: -8744338488246356995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_1
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 2073
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 344445cd29ce3f6e0800000000000000
+      internalID: -1804838910139546557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_2
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 2050
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21be92976b8db0350800000000000000
+      internalID: 5984114808120273682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_3
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 2060
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ee7d47f697b4f40800000000000000
+      internalID: 5713794071858245125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_4
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 2041
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a6719c582de3450800000000000000
+      internalID: 6070520819788245505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_5
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 2037
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24081c377627fb3a0800000000000000
+      internalID: -6647468736326303678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_6
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 2000
+        width: 78
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e7f58fb1a9899c0800000000000000
+      internalID: -3920214030704214380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_7
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1993
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da4d84976a37b2d0800000000000000
+      internalID: -3263075188458304815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_8
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 2011
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef04215f4ea2288c0800000000000000
+      internalID: -3998586356299054850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_9
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1978
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f289124078c0d4130800000000000000
+      internalID: 3552509455094618159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_10
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 1985
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3123e0632d9236060800000000000000
+      internalID: 6945441033162207763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_11
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1982
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2944d25c9797ea70800000000000000
+      internalID: 8856213889907706155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_12
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 271
+        width: 2221
+        height: 1709
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33b9d5325155fd20800000000000000
+      internalID: 3311642514533495614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_13
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 1965
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1a7457ccb2709a0800000000000000
+      internalID: -6266992199321804384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_14
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1303
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bdf3b6e46e3a9a50800000000000000
+      internalID: 6528599212915162552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_15
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1291
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 598435292efd65c60800000000000000
+      internalID: 7806673168303868053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_16
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1279
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72530396ab3b405c0800000000000000
+      internalID: -4250074535120849625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_17
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1255
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1cc349dffbcc8c10800000000000000
+      internalID: 2057243429523672091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_18
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 420
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616b0bd2fb62b9610800000000000000
+      internalID: 1628938292771730966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_19
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 407
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04cffeefe07e4fb00800000000000000
+      internalID: 861567480327306304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_20
+      rect:
+        serializedVersion: 2
+        x: 2358
+        y: 405
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4bba1c849ba8d20800000000000000
+      internalID: 3281639000630867141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_21
+      rect:
+        serializedVersion: 2
+        x: 2352
+        y: 369
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68363796c2bcd4ce0800000000000000
+      internalID: -1419254915943668858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_22
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 367
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb9cda76f21536f0800000000000000
+      internalID: -705636916781081626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_23
+      rect:
+        serializedVersion: 2
+        x: 2382
+        y: 350
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76da75cf706ca190800000000000000
+      internalID: -7949873140325493125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_24
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 324
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 392c5fe3dd22cae50800000000000000
+      internalID: 6821865869198869139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_25
+      rect:
+        serializedVersion: 2
+        x: 2384
+        y: 329
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ffc2495e1422bc0800000000000000
+      internalID: -3809409880512725090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_26
+      rect:
+        serializedVersion: 2
+        x: 2193
+        y: 261
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812244ffc03bcca30800000000000000
+      internalID: 4236958217852428824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_27
+      rect:
+        serializedVersion: 2
+        x: 2212
+        y: 270
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c19710950b8f71c0800000000000000
+      internalID: -4503728246338645567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_28
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 177
+        width: 160
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b11270fb3b556da0800000000000000
+      internalID: -5952251019505036877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_29
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 243
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adfa1ebcab3fff1c0800000000000000
+      internalID: -4467584321718210598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_30
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 254
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec5be7e6a185b8c00800000000000000
+      internalID: 903913020764108238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bpcadillo_tutoriales_31
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 75
+        width: 128
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7dc4b1bb171aad90800000000000000
+      internalID: -7085825656001081988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bpcadillo_tutoriales_0: -8744338488246356995
+      Bpcadillo_tutoriales_1: -1804838910139546557
+      Bpcadillo_tutoriales_10: 6945441033162207763
+      Bpcadillo_tutoriales_11: 8856213889907706155
+      Bpcadillo_tutoriales_12: 3311642514533495614
+      Bpcadillo_tutoriales_13: -6266992199321804384
+      Bpcadillo_tutoriales_14: 6528599212915162552
+      Bpcadillo_tutoriales_15: 7806673168303868053
+      Bpcadillo_tutoriales_16: -4250074535120849625
+      Bpcadillo_tutoriales_17: 2057243429523672091
+      Bpcadillo_tutoriales_18: 1628938292771730966
+      Bpcadillo_tutoriales_19: 861567480327306304
+      Bpcadillo_tutoriales_2: 5984114808120273682
+      Bpcadillo_tutoriales_20: 3281639000630867141
+      Bpcadillo_tutoriales_21: -1419254915943668858
+      Bpcadillo_tutoriales_22: -705636916781081626
+      Bpcadillo_tutoriales_23: -7949873140325493125
+      Bpcadillo_tutoriales_24: 6821865869198869139
+      Bpcadillo_tutoriales_25: -3809409880512725090
+      Bpcadillo_tutoriales_26: 4236958217852428824
+      Bpcadillo_tutoriales_27: -4503728246338645567
+      Bpcadillo_tutoriales_28: -5952251019505036877
+      Bpcadillo_tutoriales_29: -4467584321718210598
+      Bpcadillo_tutoriales_3: 5713794071858245125
+      Bpcadillo_tutoriales_30: 903913020764108238
+      Bpcadillo_tutoriales_31: -7085825656001081988
+      Bpcadillo_tutoriales_4: 6070520819788245505
+      Bpcadillo_tutoriales_5: -6647468736326303678
+      Bpcadillo_tutoriales_6: -3920214030704214380
+      Bpcadillo_tutoriales_7: -3263075188458304815
+      Bpcadillo_tutoriales_8: -3998586356299054850
+      Bpcadillo_tutoriales_9: 3552509455094618159
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

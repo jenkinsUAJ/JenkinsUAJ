@@ -1,0 +1,3 @@
+/Builds
+# Ignora los archivos ocultos de finder del mac.
+**.DS_Store

@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: e09f8b59127d5504ba6084b90fd3ed0c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1022543973879706652
+    second: run_crass_0
+  - first:
+      213: 3940468338514711905
+    second: run_crass_1
+  - first:
+      213: 2051335228733596063
+    second: run_crass_2
+  - first:
+      213: 4643899510932360783
+    second: run_crass_3
+  - first:
+      213: 4031923228249955666
+    second: run_crass_4
+  - first:
+      213: 179845571373504208
+    second: run_crass_5
+  - first:
+      213: -9014672049703700777
+    second: run_crass_6
+  - first:
+      213: 6478911523429678971
+    second: run_crass_7
+  - first:
+      213: 7195296886782553650
+    second: run_crass_8
+  - first:
+      213: 8693465601616661233
+    second: run_crass_9
+  - first:
+      213: 6090871658694073662
+    second: run_crass_10
+  - first:
+      213: -653505895025769018
+    second: run_crass_11
+  - first:
+      213: -5222321978633552842
+    second: run_crass_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: run_crass_0
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 649
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb0fa56ca13fc1f0800000000000000
+      internalID: -1022543973879706652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_crass_1
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 179
+        width: 365
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165d7dd831b5fa630800000000000000
+      internalID: 3940468338514711905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_crass_2
+      rect:
+        serializedVersion: 2
+        x: 2692
+        y: 170
+        width: 382
+        height: 546
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9129e7a58ec77c10800000000000000
+      internalID: 2051335228733596063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_crass_3
+      rect:
+        serializedVersion: 2
+        x: 4650
+        y: 167
+        width: 344
+        height: 531
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4ecbb13002727040800000000000000
+      internalID: 4643899510932360783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_crass_4
+      rect:
+        serializedVersion: 2
+        x: 6568
+        y: 172
+        width: 357
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d1c7560d444f730800000000000000
+      internalID: 4031923228249955666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_crass_5
+      rect:
+        serializedVersion: 2
+        x: 8466
+        y: 168
+        width: 385
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d615242890fe7200800000000000000
+      internalID: 179845571373504208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_crass_6
+      rect:
+        serializedVersion: 2
+        x: 10375
+        y: 191
+        width: 412
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d6b4c6588375e280800000000000000
+      internalID: -9014672049703700777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_crass_7
+      rect:
+        serializedVersion: 2
+        x: 12293
+        y: 179
+        width: 363
+        height: 543
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ff53d24b7b9e950800000000000000
+      internalID: 6478911523429678971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_crass_8
+      rect:
+        serializedVersion: 2
+        x: 14212
+        y: 170
+        width: 382
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23ee52e6564dad360800000000000000
+      internalID: 7195296886782553650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_crass_9
+      rect:
+        serializedVersion: 2
+        x: 16168
+        y: 166
+        width: 346
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa407b97e465a870800000000000000
+      internalID: 8693465601616661233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_crass_10
+      rect:
+        serializedVersion: 2
+        x: 18073
+        y: 172
+        width: 376
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d54f4b08f178450800000000000000
+      internalID: 6090871658694073662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_crass_11
+      rect:
+        serializedVersion: 2
+        x: 19984
+        y: 168
+        width: 390
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c58d54d9d74ee6f0800000000000000
+      internalID: -653505895025769018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run_crass_12
+      rect:
+        serializedVersion: 2
+        x: 21893
+        y: 191
+        width: 414
+        height: 553
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63cf4d854d59687b0800000000000000
+      internalID: -5222321978633552842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      run_crass_0: -1022543973879706652
+      run_crass_1: 3940468338514711905
+      run_crass_10: 6090871658694073662
+      run_crass_11: -653505895025769018
+      run_crass_12: -5222321978633552842
+      run_crass_2: 2051335228733596063
+      run_crass_3: 4643899510932360783
+      run_crass_4: 4031923228249955666
+      run_crass_5: 179845571373504208
+      run_crass_6: -9014672049703700777
+      run_crass_7: 6478911523429678971
+      run_crass_8: 7195296886782553650
+      run_crass_9: 8693465601616661233
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

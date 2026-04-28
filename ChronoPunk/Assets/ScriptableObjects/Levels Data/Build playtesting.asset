@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cce315a1685c74554877b89aa583fd5e, type: 3}
+  m_Name: Build playtesting
+  m_EditorClassIdentifier: 
+  levels:
+  - state: 0
+    name: Nivel 1
+    sceneName: Basico_01
+    sceneAsset: {fileID: 102900000, guid: add5963d6784e184a8dafe826000dd03, type: 3}
+    levelPreview: {fileID: -1527312151859408640, guid: 3536a7520bd36f841ac5ea6a9307d586, type: 3}
+  - state: 0
+    name: Nivel 3
+    sceneName: Basico_02
+    sceneAsset: {fileID: 102900000, guid: 86a3139f378f21345a92a6745903cf2c, type: 3}
+    levelPreview: {fileID: 3426859158713091517, guid: 75bfed03e638cef479440d857a029f19, type: 3}
+  - state: 0
+    name: Nivel 4
+    sceneName: Basico_03
+    sceneAsset: {fileID: 102900000, guid: 9d67523c869dba542adc714d83da965c, type: 3}
+    levelPreview: {fileID: 3426859158713091517, guid: 75bfed03e638cef479440d857a029f19, type: 3}
+  - state: 0
+    name: Nivel 5
+    sceneName: Basico_04
+    sceneAsset: {fileID: 102900000, guid: 1efe4a619873ac344b84463697324e04, type: 3}
+    levelPreview: {fileID: 3426859158713091517, guid: 75bfed03e638cef479440d857a029f19, type: 3}
+  - state: 0
+    name: Nivel 6
+    sceneName: Basico_05
+    sceneAsset: {fileID: 102900000, guid: 2b65a209af0e81241b17475aa1413920, type: 3}
+    levelPreview: {fileID: 6159840125353736910, guid: a0c2612488b2902479645ed52c50e538, type: 3}
+  - state: 0
+    name: Nivel 7
+    sceneName: Basico_06
+    sceneAsset: {fileID: 102900000, guid: 2d60bffadad426c438e8aa5e96de0123, type: 3}
+    levelPreview: {fileID: 2429219465978435979, guid: 06dbe04544dc36147ab35772be74e1a7, type: 3}
+  - state: 0
+    name: Nivel 8
+    sceneName: Basico_07
+    sceneAsset: {fileID: 102900000, guid: fd1516c18c785c4419e40230490f840a, type: 3}
+    levelPreview: {fileID: 717430271411767767, guid: d3cd7704c75e7a14eb802baa28feeb9d, type: 3}
+  - state: 0
+    name: Nivel 9
+    sceneName: Basico_08
+    sceneAsset: {fileID: 102900000, guid: 0d5fc520329804840876d4e88103f709, type: 3}
+    levelPreview: {fileID: 3681150035110911560, guid: b9262db535410524eb8c544f7ee3ea25, type: 3}
+  - state: 0
+    name: Nivel 10
+    sceneName: Basico_09
+    sceneAsset: {fileID: 102900000, guid: ff38f01d7603c5f4b937c0f8b0eea2f5, type: 3}
+    levelPreview: {fileID: 3681150035110911560, guid: b9262db535410524eb8c544f7ee3ea25, type: 3}
+  - state: 0
+    name: Nivel 11
+    sceneName: Basico_10
+    sceneAsset: {fileID: 102900000, guid: 9b0e7f20baafbfe45b0bb44adf24a78f, type: 3}
+    levelPreview: {fileID: -7908023018638289460, guid: 6167adb64f5fdc84f9b9bb545b9f942a, type: 3}
+  - state: 0
+    name: Nivel 12
+    sceneName: Roca_01
+    sceneAsset: {fileID: 102900000, guid: 9a40b1cceea81d344962b2ddc20f93be, type: 3}
+    levelPreview: {fileID: 5900700874940909685, guid: 7e0053a9646f9c34abdaaeebb9a5612c, type: 3}
+  - state: 0
+    name: Nivel 13
+    sceneName: Roca_02
+    sceneAsset: {fileID: 102900000, guid: d563994794546a547bfe6204c615fff9, type: 3}
+    levelPreview: {fileID: 3681150035110911560, guid: b9262db535410524eb8c544f7ee3ea25, type: 3}
+  - state: 0
+    name: Nivel 13
+    sceneName: Roca_03
+    sceneAsset: {fileID: 102900000, guid: 6e3198533bf816b44b213f5c99129f8c, type: 3}
+    levelPreview: {fileID: 3681150035110911560, guid: b9262db535410524eb8c544f7ee3ea25, type: 3}

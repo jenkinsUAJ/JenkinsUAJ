@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36853e1b691c6a84f98a0ddb6b068295, type: 3}
+  m_Name: LevelsMaxSlots
+  m_EditorClassIdentifier: 
+  levels:
+  - scenePath: Assets/Scenes/FinalNiveles/01_Basicos/Basico_01.unity
+    scene: {fileID: 102900000, guid: add5963d6784e184a8dafe826000dd03, type: 3}
+    maxSlots: 1
+  - scenePath: Assets/Scenes/FinalNiveles/01_Basicos/Basico_02.unity
+    scene: {fileID: 102900000, guid: 86a3139f378f21345a92a6745903cf2c, type: 3}
+    maxSlots: 1
+  - scenePath: Assets/Scenes/FinalNiveles/01_Basicos/Basico_03.unity
+    scene: {fileID: 102900000, guid: 9d67523c869dba542adc714d83da965c, type: 3}
+    maxSlots: 2
+  - scenePath: Assets/Scenes/FinalNiveles/01_Basicos/Basico_04.unity
+    scene: {fileID: 102900000, guid: 1efe4a619873ac344b84463697324e04, type: 3}
+    maxSlots: 2
+  - scenePath: Assets/Scenes/FinalNiveles/01_Basicos/Basico_05.unity
+    scene: {fileID: 102900000, guid: 2b65a209af0e81241b17475aa1413920, type: 3}
+    maxSlots: 2
+  - scenePath: Assets/Scenes/FinalNiveles/01_Basicos/Basico_06.unity
+    scene: {fileID: 102900000, guid: 2d60bffadad426c438e8aa5e96de0123, type: 3}
+    maxSlots: 2
+  - scenePath: Assets/Scenes/FinalNiveles/01_Basicos/Basico_07.unity
+    scene: {fileID: 102900000, guid: fd1516c18c785c4419e40230490f840a, type: 3}
+    maxSlots: 3
+  - scenePath: Assets/Scenes/FinalNiveles/01_Basicos/Basico_08.unity
+    scene: {fileID: 102900000, guid: 0d5fc520329804840876d4e88103f709, type: 3}
+    maxSlots: 3
+  - scenePath: Assets/Scenes/FinalNiveles/01_Basicos/Basico_09.unity
+    scene: {fileID: 102900000, guid: ff38f01d7603c5f4b937c0f8b0eea2f5, type: 3}
+    maxSlots: 2
+  - scenePath: Assets/Scenes/FinalNiveles/01_Basicos/Basico_10.unity
+    scene: {fileID: 102900000, guid: 9b0e7f20baafbfe45b0bb44adf24a78f, type: 3}
+    maxSlots: 3
+  - scenePath: Assets/Scenes/FinalNiveles/02_Roca/Roca_01.unity
+    scene: {fileID: 102900000, guid: 9a40b1cceea81d344962b2ddc20f93be, type: 3}
+    maxSlots: 4
+  - scenePath: Assets/Scenes/FinalNiveles/02_Roca/Roca_02.unity
+    scene: {fileID: 102900000, guid: d563994794546a547bfe6204c615fff9, type: 3}
+    maxSlots: 3
+  - scenePath: Assets/Scenes/FinalNiveles/02_Roca/Roca_03.unity
+    scene: {fileID: 102900000, guid: 6e3198533bf816b44b213f5c99129f8c, type: 3}
+    maxSlots: 4
+  - scenePath: Assets/Scenes/FinalNiveles/03_Explosion/Explosion_01.unity
+    scene: {fileID: 102900000, guid: a21ac00ee4521214fba78333baf8d273, type: 3}
+    maxSlots: 3
+  - scenePath: Assets/Scenes/FinalNiveles/03_Explosion/Explosion_02.unity
+    scene: {fileID: 102900000, guid: 58d164a0ea13b7c41b8800d5ed6449b9, type: 3}
+    maxSlots: 4
+  - scenePath: Assets/Scenes/FinalNiveles/03_Explosion/Explosion_03.unity
+    scene: {fileID: 102900000, guid: 910a124abc8a9f84ea6b41163b670385, type: 3}
+    maxSlots: 4
+  - scenePath: Assets/Scenes/FinalNiveles/04_Globo/Globo_01.unity
+    scene: {fileID: 102900000, guid: 73b6851c2ac84cf4b9ea969f547daf30, type: 3}
+    maxSlots: 4
+  - scenePath: Assets/Scenes/FinalNiveles/04_Globo/Globo_02.unity
+    scene: {fileID: 102900000, guid: 0d46f2d2b3e531241b0fceb73fe6391f, type: 3}
+    maxSlots: 4
+  - scenePath: Assets/Scenes/FinalNiveles/04_Globo/Globo_03.unity
+    scene: {fileID: 102900000, guid: a3923068e81c19f4fa5330ab9285fdd1, type: 3}
+    maxSlots: 5
+  - scenePath: Assets/Scenes/FinalNiveles/05_Finales/Final_01.unity
+    scene: {fileID: 102900000, guid: 4b0f9c66c34d8d04499815a8d9fe8535, type: 3}
+    maxSlots: 4
+  - scenePath: Assets/Scenes/FinalNiveles/05_Finales/Final_02.unity
+    scene: {fileID: 102900000, guid: 4de7424886e7d8c4bb9ba3714af4ff75, type: 3}
+    maxSlots: 4
+  - scenePath: Assets/Scenes/FinalNiveles/05_Finales/Final_03.unity
+    scene: {fileID: 102900000, guid: 72f764f4ee30f764a952f3563b2fef24, type: 3}
+    maxSlots: 4
+  - scenePath: Assets/Scenes/FinalNiveles/05_Finales/Final_04.unity
+    scene: {fileID: 102900000, guid: 3d2290272ecc1e14cb371e5003a7f47b, type: 3}
+    maxSlots: 4

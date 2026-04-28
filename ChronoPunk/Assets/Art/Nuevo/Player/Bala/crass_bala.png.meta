@@ -1,0 +1,400 @@
+fileFormatVersion: 2
+guid: 971ae49c148e544009cbcb525198ed46
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9064062482440982812
+    second: crass_bala_0
+  - first:
+      213: -1602269671933149363
+    second: crass_bala_1
+  - first:
+      213: 1625485340904117406
+    second: crass_bala_2
+  - first:
+      213: 6052306277210725161
+    second: crass_bala_3
+  - first:
+      213: 204476198628341926
+    second: crass_bala_4
+  - first:
+      213: -9198953629977006474
+    second: crass_bala_5
+  - first:
+      213: 4602109667184772187
+    second: crass_bala_6
+  - first:
+      213: -3485424165022149081
+    second: crass_bala_7
+  - first:
+      213: -4714882610112574978
+    second: crass_bala_8
+  - first:
+      213: -7563549365517396029
+    second: crass_bala_9
+  - first:
+      213: -2007156204244997718
+    second: crass_bala_10
+  - first:
+      213: 5793747472825823636
+    second: crass_bala_11
+  - first:
+      213: -4257361629006169657
+    second: crass_bala_12
+  - first:
+      213: -2760190067638839927
+    second: crass_bala_13
+  - first:
+      213: -1350864981444027742
+    second: crass_bala_14
+  - first:
+      213: 5277069823911327897
+    second: crass_bala_15
+  - first:
+      213: -1265906586991153183
+    second: crass_bala_16
+  - first:
+      213: 3000923758751629868
+    second: crass_bala_17
+  - first:
+      213: -6964648585958817565
+    second: crass_bala_18
+  - first:
+      213: 7893857924305752049
+    second: crass_bala_19
+  - first:
+      213: -4678406737813429505
+    second: crass_bala_20
+  - first:
+      213: -6749691627269266037
+    second: crass_bala_21
+  - first:
+      213: -2165810595692313127
+    second: crass_bala_22
+  - first:
+      213: 9094463449916221253
+    second: crass_bala_23
+  - first:
+      213: -6757041501060282626
+    second: crass_bala_24
+  - first:
+      213: -5690850752041058707
+    second: crass_bala_25
+  - first:
+      213: 801398982387055164
+    second: crass_bala_26
+  - first:
+      213: -6704457188858289422
+    second: crass_bala_27
+  - first:
+      213: 6442539138216573307
+    second: crass_bala_28
+  - first:
+      213: 261299425014629922
+    second: crass_bala_29
+  - first:
+      213: 6367661154788590558
+    second: crass_bala_30
+  - first:
+      213: -4229405199555472565
+    second: crass_bala_31
+  - first:
+      213: -6288087451413598495
+    second: crass_bala_32
+  - first:
+      213: 6559977426478891261
+    second: crass_bala_33
+  - first:
+      213: 6390396077791097625
+    second: crass_bala_34
+  - first:
+      213: 3697523410942026910
+    second: crass_bala_35
+  - first:
+      213: -1163452706476603309
+    second: crass_bala_36
+  - first:
+      213: 1411538542190412803
+    second: crass_bala_37
+  - first:
+      213: 4580270579011749327
+    second: crass_bala_38
+  - first:
+      213: 8261231954775291712
+    second: crass_bala_39
+  - first:
+      213: -5569185107816088672
+    second: crass_bala_40
+  - first:
+      213: -8773919471027200345
+    second: crass_bala_41
+  - first:
+      213: 8563221867814354710
+    second: crass_bala_42
+  - first:
+      213: -267892555519653566
+    second: crass_bala_43
+  - first:
+      213: 2911580876981593464
+    second: crass_bala_44
+  - first:
+      213: -7216795997018216729
+    second: crass_bala_45
+  - first:
+      213: -8768032446452936505
+    second: crass_bala_46
+  - first:
+      213: 8701545157796011072
+    second: crass_bala_47
+  - first:
+      213: -2325477293189153801
+    second: crass_bala_48
+  - first:
+      213: 192379715203081905
+    second: crass_bala_49
+  - first:
+      213: -6434277416771897184
+    second: crass_bala_50
+  - first:
+      213: 8622107317126003091
+    second: crass_bala_51
+  - first:
+      213: -4450192436105393377
+    second: crass_bala_52
+  - first:
+      213: 8505714403422528832
+    second: crass_bala_53
+  - first:
+      213: 5112398064558596303
+    second: crass_bala_54
+  - first:
+      213: -380659371759808507
+    second: crass_bala_55
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: crass_bala_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1117d7edc40acd70800000000000000
+      internalID: 9064062482440982812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crass_bala_1
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4ffa0af83893c9e0800000000000000
+      internalID: -1602269671933149363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crass_bala_2
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e94d13c2e42ee8610800000000000000
+      internalID: 1625485340904117406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crass_bala_3
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b130d1e7c1ef350800000000000000
+      internalID: 6052306277210725161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crass_bala_4
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8b340f40276d200800000000000000
+      internalID: 204476198628341926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 52a1caca24d9b49fab3a5f69b8fb8486
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      crass_bala_0: 9064062482440982812
+      crass_bala_1: -1602269671933149363
+      crass_bala_2: 1625485340904117406
+      crass_bala_3: 6052306277210725161
+      crass_bala_4: 204476198628341926
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
