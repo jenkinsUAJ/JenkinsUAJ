@@ -91,7 +91,7 @@ extern "C" {
 	 * 
 	 * @return un puntero al objeto EventData creado, nullptr si algo ha fallado en la creacion o los parametros son incorrectos
 	 */
-	TELEMETRY_API EventData* CreateEvent(int32_t numAttributes);
+	TELEMETRY_API EventData* CreateTelemetryEvent(int32_t numAttributes);
 
 	/**
 	 * @brief libera la memoria asociada a un objeto EventData

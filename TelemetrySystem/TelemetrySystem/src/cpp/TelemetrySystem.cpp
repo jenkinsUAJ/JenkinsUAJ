@@ -89,7 +89,7 @@ TELEMETRY_API int GetCurrentEventQueueSize(void* trackerHandle)
     return tracker->getCurrentEventQueueSize();
 }
 
-TELEMETRY_API EventData* CreateEvent(int32_t numAttributes)
+TELEMETRY_API EventData* CreateTelemetryEvent(int32_t numAttributes)
 {
     if (numAttributes < 0)
     {

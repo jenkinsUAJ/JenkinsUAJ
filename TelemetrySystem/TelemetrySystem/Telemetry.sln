@@ -5,6 +5,11 @@ VisualStudioVersion = 17.14.36616.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TelemetrySystem", "projects\TelemetrySystem\TelemetrySystem.vcxproj", "{9D2B129C-8E27-41D7-8DE0-B10119E9494F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestTelemetry", "projects\TestTelemetry\TestTelemetry.vcxproj", "{DB7E621D-DC2D-41CF-ACE9-C05922936988}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9D2B129C-8E27-41D7-8DE0-B10119E9494F} = {9D2B129C-8E27-41D7-8DE0-B10119E9494F}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -18,6 +23,12 @@ Global
 		{9D2B129C-8E27-41D7-8DE0-B10119E9494F}.Release|x64.Build.0 = Release|x64
 		{9D2B129C-8E27-41D7-8DE0-B10119E9494F}.ReleaseToEngine|x64.ActiveCfg = ReleaseToEngine|x64
 		{9D2B129C-8E27-41D7-8DE0-B10119E9494F}.ReleaseToEngine|x64.Build.0 = ReleaseToEngine|x64
+		{DB7E621D-DC2D-41CF-ACE9-C05922936988}.Debug|x64.ActiveCfg = Debug|x64
+		{DB7E621D-DC2D-41CF-ACE9-C05922936988}.Debug|x64.Build.0 = Debug|x64
+		{DB7E621D-DC2D-41CF-ACE9-C05922936988}.Release|x64.ActiveCfg = Release|x64
+		{DB7E621D-DC2D-41CF-ACE9-C05922936988}.Release|x64.Build.0 = Release|x64
+		{DB7E621D-DC2D-41CF-ACE9-C05922936988}.ReleaseToEngine|x64.ActiveCfg = Release|x64
+		{DB7E621D-DC2D-41CF-ACE9-C05922936988}.ReleaseToEngine|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
