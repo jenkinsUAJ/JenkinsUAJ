@@ -1,5 +1,9 @@
 pipeline {
-    agent {'unity-build'}
+    agent {label 'unity-build'}
+    environment {
+        ZIP_PATH = "%WORKSPACE%/ZippedBuilds" 
+        BUILD_PATH = "%WORKSPACE%/Builds" 
+    }
     stages {
 
         stage('Build') {
@@ -7,7 +11,7 @@ pipeline {
                 echo pwd()
                 echo "Building Game ..."
                 bat '''
-                %UNITY_PATH% -executeMethod CustomBuild.BuildWindowsPlayer -buildTarget StandaloneWindows64 -batchmode -quit -projectPath "%WORKSPACE%/ChronoPunk" -logFile "%WORKSPACE%/build%BUILD_NUMBER%.log" -buildPath "%WORKSPACE%/%BUILD_NUMBER%"
+                %UNITY_PATH% -executeMethod CustomBuild.BuildWindowsPlayer -buildTarget StandaloneWindows64 -batchmode -quit -projectPath "%WORKSPACE%/ChronoPunk" -logFile "%BUILD_PATH%/%BUILD_NUMBER%/build.log" -buildPath "%BUILD_PATH%/%BUILD_NUMBER%"
                 '''
             }
         }
@@ -15,7 +19,7 @@ pipeline {
             steps {
                 echo "Delivering zip file ..."
                 script{
-                    zip archive: true, dir: "${BUILD_NUMBER}", zipFile: "Builds/build${BUILD_NUMBER}.zip"
+                    zip archive: true, dir: "%BUILD_PATH%/%BUILD_NUMBER%", zipFile: "%ZIP_PATH%/build${BUILD_NUMBER}.zip"
                 } 
             }
         }
