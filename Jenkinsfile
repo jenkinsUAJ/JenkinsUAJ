@@ -7,7 +7,7 @@ pipeline {
                 echo pwd()
                 echo "Building Game ..."
                 bat '''
-                %UNITY_PATH% -executeMethod CustomBuild.BuildWindowsPlayer -buildTarget StandaloneWindows64 -batchmode -quit -projectPath "%WORKSPACE%/ChronoPunk" -logFile "%BUILD_PATH%/%BUILD_NUMBER%/build.log" -buildPath "%BUILD_PATH%/%BUILD_NUMBER%"
+                %UNITY_PATH% -executeMethod CustomBuild.BuildWindowsPlayer -buildTarget StandaloneWindows64 -batchmode -quit -projectPath "%WORKSPACE%/ChronoPunk" -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/build.log" -buildPath "%WORKSPACE%/Builds/%BUILD_NUMBER%"
                 '''
             }
         }
