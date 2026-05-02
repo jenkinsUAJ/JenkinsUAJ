@@ -48,3 +48,5 @@ Ahora para que Jenkins delegue el trabajo de crear la build y los tests en otro 
 
 ## Como crear nuevos pasos en el pipeline
 
+## Correo
+Tienes que tener un usuario registrado con el correo de la persona que haya hecho commit en cronopunk

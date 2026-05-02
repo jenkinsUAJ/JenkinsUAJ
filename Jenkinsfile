@@ -35,7 +35,7 @@ pipeline {
                     Un coordial saludo, 
                     Jenkins.""",
                     to: emailextrecipients([[$class: 'CulpritsRecipientProvider']]),
-                    attachmentsPattern: "${WORKSPACE}/ZippedBuilds/build${BUILD_NUMBER}.zip"
+                    attachmentsPattern: "/ZippedBuilds/build${BUILD_NUMBER}.zip"
                 )
             }
         }
