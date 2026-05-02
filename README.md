@@ -4,6 +4,13 @@ CI con Jenkins
 
 ## Instalación y primeros pasos
 
+### Requisitos
+
+- Tener Windows
+- Tener Docker Desktop
+- Tener Unity Editor versión 6000.0.60f1
+- Tener visual studio 2022
+
 ### 1- Instalar jenkins en un contenedor de Docker
 1- Tener instalado docker desktop, sino descargarlo de aquí https://docs.docker.com/desktop/setup/install/windows-install/
 
