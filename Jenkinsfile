@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {'unity-build'}
     stages {
 
         stage('Build') {
