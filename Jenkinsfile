@@ -11,7 +11,14 @@ remote.allowAnyHosts = true
 pipeline {
     agent {label 'unity-build'}
     stages {
-
+        stage('Unit Tests Telemetry'){
+            steps {
+                echo "Ejecutando tests de unidad a la telemetría..."
+                bat '''
+                %WORKSPACE%/StageBats/telemetryUnitTests.bat
+                '''
+            }
+        }
         stage('Build') {
             steps {
                 echo pwd()
@@ -35,7 +42,6 @@ pipeline {
                 } 
             }
         }
-
         stage('Deliver'){
             agent { label 'built-in' }
             steps {

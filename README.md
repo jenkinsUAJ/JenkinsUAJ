@@ -1,5 +1,7 @@
 # Proyecto final de Usabilidad
 
+CI con Jenkins
+
 ## Instalación y primeros pasos
 
 ### 1- Instalar jenkins en un contenedor de Docker
@@ -68,13 +70,35 @@ Para ello hay que configurar y activar un contenedor de docker para hostear el s
 
 ## Como usar
 
-Una vez instalado y configurado, el pipeline se ejecutará cuando detecte un commit en este repositorio, realizará una build, mandará un correo a los desarrolladores del repo y posteará la build en el servidor de archivos de builds.
-
 El jenkins es accesible a través de http://localhost:8080  
 El server de builds es accesible a través de http://localhost:1000
 
-## Como crear nuevos pasos en el pipeline
+Una vez instalado y configurado, el pipeline se ejecutará cuando detecte un commit en este repositorio, realizará una build, mandará un correo a los desarrolladores del repo y posteará la build en el servidor de archivos de builds.
 
-todo
- 
-asdf
+## (para nosotros) Como crear nuevos stages
+
+Cambiar el Jenkinsfile de este repo, ya que cada vez que se haga build de jenkins pillará este jenkinsfile.
+
+### Formato de stage
+```
+stage('Unit Tests Telemetry') {  
+    steps {
+        echo "Ejecutando tests de unidad a la telemetría..."
+        bat '''
+        %WORKSPACE%/StageBats/telemetryUnitTests.bat
+        '''
+    }  
+}  
+```
+
+Dentro de cada stage habrá un steps, que ahi se ejecutarán secuencialmente los comandos windows incluidos. Para hacer tests, deberíamos usar bat, y crear un bat en el directorio `StageBats` el cual haga las compilaciones y ejecuciones necesarias y finalmente devuelva 0 para SUCCESS o 1 para FAILURE. (mirar ejemplo de telemetryUnitTests.bat)
+
+Una vez el bat funcione por si solo, añadimos el stage en el jenkinsfile y al commitearlo al repo ya funcionaría
+
+Si quereis hacer pruebas sin tener que comitear al repo todo el rato, dentro de la configuracion de jenkins hay para modificar que el pipeline no salga de un git y ponerlo manualmente
+
+## TODO
+
+- smoke test de cargar partidas
+- lo de ejecutar el nivel 1 y recrearlo con unos movimientos pregrabados que deberían pasar el nivel y comprobar si se lo pasa o no
+- algo mas q no me acuerdo
