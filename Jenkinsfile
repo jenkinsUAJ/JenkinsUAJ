@@ -13,9 +13,11 @@ pipeline {
         }
         stage('Deliver'){
             steps {
-                echo "Delivering zip file ..."
-                script{
-                    zip archive: true, dir: "%WORKSPACE%/Builds/%BUILD_NUMBER%", zipFile: "%WORKSPACE%/ZippedBuilds/build%BUILD_NUMBER%.zip"
+                echo "Empaquetando build..."
+                script {
+                    zip archive: true, 
+                        dir: "${WORKSPACE}/Builds/${BUILD_NUMBER}", 
+                        zipFile: "ZippedBuilds/build${BUILD_NUMBER}.zip"
                 } 
             }
         }
@@ -25,25 +27,25 @@ pipeline {
         success {
             script {
                 emailext (
-                    subject: "Build Exitosa de Cronopunk - %BUILD_NUMBER%",
+                    subject: "Build Exitosa de Cronopunk - ${BUILD_NUMBER}",
                     body: """Hola,
                     Aqui tienes build de Cronopunk
-                    Puedes revisar los detalles aquí: %BUILD_URL%
+                    Puedes revisar los detalles aquí: ${BUILD_URL}
                     
                     Un coordial saludo, 
                     Jenkins.""",
                     to: ccem(culprits: true),
-                    attachmentsPattern: "%WORKSPACE%/ZippedBuilds/build%BUILD_NUMBER%.zip"
+                    attachmentsPattern: "${WORKSPACE}/ZippedBuilds/build${BUILD_NUMBER}.zip"
                 )
             }
         }
         failure {
             script{
                 emailext (
-                    subject: "Build Fallida de Cronopunk - %BUILD_NUMBER%",
+                    subject: "Build Fallida de Cronopunk - ${BUILD_NUMBER}",
                     body: """Hola, 
                     La build ha fallado. 
-                    Revisa los logs en: %BUILD_URL%
+                    Revisa los logs en: ${BUILD_URL}
                     
                     Un coordial saludo, 
                     Jenkins.""",
