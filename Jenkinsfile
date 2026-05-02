@@ -34,7 +34,7 @@ pipeline {
                     
                     Un coordial saludo, 
                     Jenkins.""",
-                    to: ccem(culprits: true),
+                    to: emailextrecipients([[$class: 'CulpritsRecipientProvider']]),
                     attachmentsPattern: "${WORKSPACE}/ZippedBuilds/build${BUILD_NUMBER}.zip"
                 )
             }
@@ -49,7 +49,7 @@ pipeline {
                     
                     Un coordial saludo, 
                     Jenkins.""",
-                    to: ccem(culprits: true)
+                    to: emailextrecipients([[$class: 'CulpritsRecipientProvider']]),
                 )
             }
         }
