@@ -1,9 +1,5 @@
 pipeline {
     agent {label 'unity-build'}
-    environment {
-        ZIP_PATH = "%WORKSPACE%/ZippedBuilds" 
-        BUILD_PATH = "%WORKSPACE%/Builds" 
-    }
     stages {
 
         stage('Build') {
@@ -19,7 +15,7 @@ pipeline {
             steps {
                 echo "Delivering zip file ..."
                 script{
-                    zip archive: true, dir: "%BUILD_PATH%/%BUILD_NUMBER%", zipFile: "%ZIP_PATH%/build%BUILD_NUMBER%.zip"
+                    zip archive: true, dir: "%WORKSPACE%/Builds/%BUILD_NUMBER%", zipFile: "%WORKSPACE%/ZippedBuilds/build%BUILD_NUMBER%.zip"
                 } 
             }
         }
@@ -37,7 +33,7 @@ pipeline {
                     Un coordial saludo, 
                     Jenkins.""",
                     to: ccem(culprits: true),
-                    attachmentsPattern: "%ZIP_PATH%/build${BUILD_NUMBER}.zip"
+                    attachmentsPattern: "%WORKSPACE%/ZippedBuilds/build%BUILD_NUMBER%.zip"
                 )
             }
         }
