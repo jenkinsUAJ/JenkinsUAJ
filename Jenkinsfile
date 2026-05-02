@@ -19,8 +19,40 @@ pipeline {
             steps {
                 echo "Delivering zip file ..."
                 script{
-                    zip archive: true, dir: "%BUILD_PATH%/%BUILD_NUMBER%", zipFile: "%ZIP_PATH%/build${BUILD_NUMBER}.zip"
+                    zip archive: true, dir: "%BUILD_PATH%/%BUILD_NUMBER%", zipFile: "%ZIP_PATH%/build%BUILD_NUMBER%.zip"
                 } 
+            }
+        }
+    }
+
+    post {
+        success {
+            script {
+                emailext (
+                    subject: "Build Exitosa de Cronopunk - %BUILD_NUMBER%",
+                    body: """Hola,
+                    Aqui tienes build de Cronopunk
+                    Puedes revisar los detalles aquí: %BUILD_URL%
+                    
+                    Un coordial saludo, 
+                    Jenkins.""",
+                    to: ccem(culprits: true),
+                    attachmentsPattern: "%ZIP_PATH%/build${BUILD_NUMBER}.zip"
+                )
+            }
+        }
+        failure {
+            script{
+                emailext (
+                    subject: "Build Fallida de Cronopunk - %BUILD_NUMBER%",
+                    body: """Hola, 
+                    La build ha fallado. 
+                    Revisa los logs en: %BUILD_URL%
+                    
+                    Un coordial saludo, 
+                    Jenkins.""",
+                    to: ccem(culprits: true)
+                )
             }
         }
     }
