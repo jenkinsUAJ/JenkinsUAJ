@@ -11,6 +11,8 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
+docker network create jenkins
+
 :: Build del contenedor jenkins
 docker build -t myjenkins-blueocean:2.555.1-1 .
 
