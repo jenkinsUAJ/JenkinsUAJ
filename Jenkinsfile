@@ -15,7 +15,7 @@ pipeline {
             steps {
                 echo "Ejecutando tests de unidad a la telemetría..."
                 bat '''
-                %WORKSPACE%/StageBats/telemetryUnitTests.bat
+                "%WORKSPACE%/StageBats/telemetryUnitTests.bat"
                 '''
             }
         }
