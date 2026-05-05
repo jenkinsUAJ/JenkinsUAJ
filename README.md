@@ -57,7 +57,7 @@ Ahora para que Jenkins delegue el trabajo de crear la build y los tests en otro 
 
 5- Ahora en directorio de raíz remoto ponemos `{rutaAlRepositorio}\JenkinsUnityAgentWorkspace`  (en ruta al repositorio ponemos la ruta de nuestro pc a este repo) -> en método de ejecución ponemos `Launch agent by connecting it to the controller` -> y en variables de entorno añadimos una que sea: nombre: `UNITY_PATH` valor: `"C:\Program Files\Unity\Hub\Editor\6000.0.60f1\Editor\Unity.exe"` (en caso de tener la ruta al editor de Unity de la versión de Cronopunk en otro directorio, cambiarlo) -> Guardar  
 
-6- Ahora se habrá creado el agente, pero saldrá un icono de una cruz roja indicando que no está conectado, hay que hacer clic en el nodo, y copiar el comando a ejecutar para windows, y ir a un CMD y ejecutarlo  
+6- Ahora se habrá creado el agente, pero saldrá un icono de una cruz roja indicando que no está conectado, hay que hacer clic en el nodo, y copiar el comando a ejecutar para windows, y ir a un CMD (Powershell NO) y ejecutarlo  
 
 7- Ahora ya funcionaría, cada vez que se quiera ejecutar el pipeline debe estar el agente activo, de lo contrario saldrá la cruz roja y fallará la creación de build
 
