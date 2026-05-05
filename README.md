@@ -10,6 +10,7 @@ CI con Jenkins
 - Tener Docker Desktop
 - Tener Unity Editor versión 6000.0.60f1
 - Tener visual studio 2022
+- Tener Java JDK
 
 ### 1- Instalar jenkins en un contenedor de Docker
 1- Tener instalado docker desktop, sino descargarlo de aquí https://docs.docker.com/desktop/setup/install/windows-install/
@@ -46,17 +47,19 @@ Ahora vamosa a crear y configurar un pipeline para que coja automaticamente el J
 Jenkins necesita de un directorio con los archivos de Editor de Unity para poder generar builds y hacer tests con ella. Habría que hacer una imagen docker personalizada, con la versión de Unity, luego activar la licencia e iniciar sesión, lo que aumenta demasiado la complejidad. Por lo que asumimos que el PC que ejecuta el contenedor Jenkins es Windows, y tiene descargado Unity y el editor de la versión del juego (6000.0.60f1)  
 Ahora para que Jenkins delegue el trabajo de crear la build y los tests en otro tenemos que crear un "Agente"
 
-1- Vamos a ajustes de jenkins (Administrar jenkins), al engranaje  
+1- Antes de nada asegurar tener java instalado (hacer java --version en cmd) si no está instalado, descargar de aquí: `https://www.oracle.com/java/technologies/javase/jdk25-archive-downloads.html`
 
-2- Vamos a Nodes -> New Node  
+2- Vamos a ajustes de jenkins (Administrar jenkins), al engranaje  
 
-3- En nombre del nodo ponemos `unity-build` y activamos la opción `permanent agent` -> Create
+3- Vamos a Nodes -> New Node  
 
-4- Ahora en directorio de raíz remoto ponemos `{rutaAlRepositorio}\JenkinsUnityAgentWorkspace`  (en ruta al repositorio ponemos la ruta de nuestro pc a este repo) -> en método de ejecución ponemos `Launch agent by connecting it to the controller` -> y en variables de entorno añadimos una que sea: nombre: `UNITY_PATH` valor: `"C:\Program Files\Unity\Hub\Editor\6000.0.60f1\Editor\Unity.exe"` (en caso de tener la ruta al editor de Unity de la versión de Cronopunk en otro directorio, cambiarlo) -> Guardar  
+4- En nombre del nodo ponemos `unity-build` y activamos la opción `permanent agent` -> Create
 
-5- Ahora se habrá creado el agente, pero saldrá un icono de una cruz roja indicando que no está conectado, hay que hacer clic en el nodo, y copiar el comando a ejecutar para windows, y ir a un CMD y ejecutarlo  
+5- Ahora en directorio de raíz remoto ponemos `{rutaAlRepositorio}\JenkinsUnityAgentWorkspace`  (en ruta al repositorio ponemos la ruta de nuestro pc a este repo) -> en método de ejecución ponemos `Launch agent by connecting it to the controller` -> y en variables de entorno añadimos una que sea: nombre: `UNITY_PATH` valor: `"C:\Program Files\Unity\Hub\Editor\6000.0.60f1\Editor\Unity.exe"` (en caso de tener la ruta al editor de Unity de la versión de Cronopunk en otro directorio, cambiarlo) -> Guardar  
 
-6- Ahora ya funcionaría, cada vez que se quiera ejecutar el pipeline debe estar el agente activo, de lo contrario saldrá la cruz roja y fallará la creación de build
+6- Ahora se habrá creado el agente, pero saldrá un icono de una cruz roja indicando que no está conectado, hay que hacer clic en el nodo, y copiar el comando a ejecutar para windows, y ir a un CMD y ejecutarlo  
+
+7- Ahora ya funcionaría, cada vez que se quiera ejecutar el pipeline debe estar el agente activo, de lo contrario saldrá la cruz roja y fallará la creación de build
 
 ### 4- Configurar servidor almacenador de builds
 El almacenamiento de los zip de las builds generadas se hace en un servidor aparte, que tendrá todas las builds generadas y cada build mandará un enlace por correo al fichero en el server.  
