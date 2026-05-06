@@ -1,4 +1,5 @@
 using System.IO;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
@@ -18,16 +19,28 @@ public class CustomBuild
         return null;
     }
 
+    private static string[] FillLevels()
+    {
+        return (from scene in EditorBuildSettings.scenes where scene.enabled select scene.path).ToArray();
+    }
+
     [MenuItem("Build/Build Windows Player With Readme")]
     public static void BuildWindowsPlayer()
     {
+        Debug.Log(EditorBuildSettingsScene.GetActiveSceneList(EditorBuildSettings.scenes));
             // Define build options
-            string path =GetArg("-buildPath");/* EditorUtility.SaveFolderPanel("Choose Location of Built Game", "", "");*/
+        string path =GetArg("-buildPath");/* EditorUtility.SaveFolderPanel("Choose Location of Built Game", "", "");*/
+
+        if(path  == null)
+        {
+            path = "../Build";
+        }
+
 
         var buildOptions = new BuildPlayerOptions()
         {
             // Adjust scene list based on your project
-            scenes = new string[] { "Assets/Scenes/FinalMenus/MainMenu.unity"},
+            scenes = FillLevels(),
             locationPathName = path + "/MyGame.exe",
             target = BuildTarget.StandaloneWindows64,
             options = BuildOptions.AutoRunPlayer
