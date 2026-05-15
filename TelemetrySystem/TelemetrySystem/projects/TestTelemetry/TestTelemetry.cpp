@@ -53,12 +53,13 @@ TEST_CASE( "Track Evnet Correct", "[Evnets]" ) {
     CloseTracker( tracker );
 };
 
-TEST_CASE( "Max Tack Events", "[Evnets]" ) {
+TEST_CASE( "Max Tack Events", "[Queue]" ) {
 
     Tracker* tracker = (Tracker*)CreateTracker( 0, 0, 0, "MaxEventDataTest.json" );
 
     std::vector<EventData*> datas;
 
+    //Numero harcoded ya que el parametro no es accesible de forma publica
     for (int i = 0; i < 1024; i++) {
         EventData* data = CreateTelemetryEvent( 0 );
         int ret = TrackEvent( tracker, data );
@@ -70,12 +71,13 @@ TEST_CASE( "Max Tack Events", "[Evnets]" ) {
 };
 
 
-TEST_CASE( "Max Tack Events Flush push", "[Evnets]" ) {
+TEST_CASE( "Max Tack Events Flush push", "[Queue]" ) {
 
     Tracker* tracker = (Tracker*)CreateTracker( 0, 0, 0, "MaxEventDataFlushTest.json" );
 
     std::vector<EventData*> datas;
 
+    //Numero harcoded ya que el parametro no es accesible de forma publica
     for (int i = 0; i < 1024; i++) {
         EventData* data = CreateTelemetryEvent( 0 );
         int ret = TrackEvent( tracker, data );
@@ -91,3 +93,41 @@ TEST_CASE( "Max Tack Events Flush push", "[Evnets]" ) {
     CloseTracker( tracker );
 };
 
+TEST_CASE("GetCurrentEventQueueSize null","[Queue]") {
+    int ret = GetCurrentEventQueueSize(nullptr);
+    REQUIRE(ret == -1);
+}
+
+TEST_CASE("GetCurrentEventQueueSize normal usage", "[Queue]") {
+    Tracker* tracker = (Tracker*)CreateTracker(0, 0, 0, "EventDataTest.json");
+    EventData* data = CreateTelemetryEvent(0);
+    EventData* data2 = CreateTelemetryEvent(0);
+
+    int ret = TrackEvent(tracker, data);
+    int ret2 = TrackEvent(tracker, data2);
+
+
+    int retQueue = GetCurrentEventQueueSize(tracker);
+
+    REQUIRE(retQueue == 2);
+
+    CloseTracker(tracker);
+}
+
+TEST_CASE("GetCurrentEventQueueSize post-flush", "[Queue]") {
+    Tracker* tracker = (Tracker*)CreateTracker(0, 0, 0, "EventDataTest.json");
+    EventData* data = CreateTelemetryEvent(0);
+    EventData* data2 = CreateTelemetryEvent(0);
+    int ret = TrackEvent(tracker, data);
+    int ret2 = TrackEvent(tracker, data2);
+
+    int retQueue = GetCurrentEventQueueSize(tracker);
+
+    Flush(tracker);
+    
+    retQueue = GetCurrentEventQueueSize(tracker);
+
+    REQUIRE(retQueue == 0);
+
+    CloseTracker(tracker);
+}
