@@ -28,18 +28,24 @@ public class PlayerShaderController : MonoBehaviour
 
     protected virtual void OnEnableController()
     {
+        if (!RecordingSlotManager.Instance) return;
+
         RecordingSlotManager.Instance.OnRecordingStarted -= Init;
 
     }
     protected virtual void OnDisableController()
     {
+        if (!RecordingSlotManager.Instance) return;
+
         RecordingSlotManager.Instance.OnRecordingStarted -= Init;
     }
 
     protected virtual void OnStartController()
     {
-        RecordingSlotManager.Instance.OnRecordingStarted += Init;
         vfxrestart = GetComponent<VFX_Restart>();
+        if (!RecordingSlotManager.Instance) return;
+
+        RecordingSlotManager.Instance.OnRecordingStarted += Init;
     }
 
     private void OnEnable()
