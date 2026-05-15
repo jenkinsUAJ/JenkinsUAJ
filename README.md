@@ -27,7 +27,7 @@ Una vez obtenida la contraseña, guardarla, copiarla y pegarla en la caja de tex
 
 5- Ahora pedirá crear un usuario de admin, como vamos a hacer una prueba de concepto, le damos a `Skip and continue as admin` y la url ponemos la default (http://localhost:8080/) y le damos a `Save And Finish`
 
-6- Para que funcionen ciertas funciones del pipeline, hay que instalar una serie de plugins, vamos a Administrar Jenkins (el engranaje / configuración) -> plugins -> available plugins -> Instalamos `Pipeline Utility Steps`, `NUnit` y `SSH Pipeline Steps` -> Reiniciamos cuando termine
+6- Para que funcionen ciertas funciones del pipeline, hay que instalar una serie de plugins, vamos a Administrar Jenkins (el engranaje / configuración) -> plugins -> available plugins -> Instalamos `Pipeline Utility Steps` y `SSH Pipeline Steps` -> Reiniciamos cuando termine
 
 DISCLAIMER: En caso de que se cierre sesión en Jenkins, el usuario es `admin` y la contraseña es la contraseña obtenida en el paso 4
 ### 2- Configurar el pipeline dentro de Jenkins
