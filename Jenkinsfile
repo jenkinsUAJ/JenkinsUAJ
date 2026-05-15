@@ -32,7 +32,6 @@ pipeline {
             agent {
                 docker {
                     image 'python:3.11-slim'
-                    reuseNode true
                 }
             }
             steps {
@@ -116,7 +115,7 @@ pipeline {
                     Eres un ruina. La build ha fallado.
                     Revisa los logs en: ${BUILD_URL}
 
-                    Un coordial saludo, 
+                    Un coordial saludo,
                     Jenkins.""",
                     to: emailextrecipients([
                         [$class: 'DevelopersRecipientProvider']
