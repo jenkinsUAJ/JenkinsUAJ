@@ -25,12 +25,15 @@ pipeline {
                 bat '''
                 %UNITY_PATH% -batchmode -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform EditMode -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode-results.xml" -testResultsFormatter junit -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode.log" 
                 '''
+                bat '''
+                python nunit_to_junit.py "%WORKSPACE%\\Builds\\%BUILD_NUMBER%\\editmode-results.xml" "%WORKSPACE%\\Builds\\%BUILD_NUMBER%\\editmode-junit.xml"
+                '''
             }
             post {
                 always {
                     archiveArtifacts artifacts: 'Builds/**/*.log'
                     archiveArtifacts artifacts: 'Builds/**/*.xml'
-                    junit testResults: 'Builds/**/*.xml'
+                    junit testResults: 'Builds/**/*junit.xml'
                 }
             }
         }
@@ -49,12 +52,15 @@ pipeline {
                 bat '''
                 %UNITY_PATH% -batchmode -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform PlayMode -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/playmode-results.xml" -testResultsFormatter junit -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/playmode.log" 
                 '''
+                bat '''
+                python nunit_to_junit.py "%WORKSPACE%\\Builds\\%BUILD_NUMBER%\\editmode-results.xml" "%WORKSPACE%\\Builds\\%BUILD_NUMBER%\\editmode-junit.xml"
+                '''
             }
             post {
                 always {
                     archiveArtifacts artifacts: 'Builds/**/*.log'
                     archiveArtifacts artifacts: 'Builds/**/*.xml'
-                    junit testResults: 'Builds/**/*.xml'
+                    junit testResults: 'Builds/**/*junit.xml'
                 }
             }
         }
