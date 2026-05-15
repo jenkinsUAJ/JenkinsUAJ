@@ -28,18 +28,53 @@ pipeline {
                 '''
             }
         }
+        stage('Analytics') {
+            agent {
+                docker {
+                    image 'python:3.11-slim'
+                    reuseNode true
+                }
+            }
+            steps {
+                echo "Ejecutando analisis de datos en Python..."
+                sh '''
+                set -eux
+                cd TelemetrySystem/analytics
+                python -m venv venv
+                . venv/bin/activate
+                pip install --upgrade pip
+                pip install -r requirements.txt
+                python main.py
+                '''
+                stash name: 'analytics-results', includes: 'TelemetrySystem/analytics/results/**'
+            }
+        }
         stage('Zip'){
             steps {
                 echo "Empaquetando build..."
                 script {
-                    zip archive: true, 
-                        dir: "Builds/${BUILD_NUMBER}", 
+                    zip archive: true,
+                        dir: "Builds/${BUILD_NUMBER}",
                         zipFile: "ZippedBuilds/build${BUILD_NUMBER}.zip"
 
                     dir("ZippedBuilds") {
                         stash name: 'build-zip', includes: "build${BUILD_NUMBER}.zip"
                     }
-                } 
+                }
+            }
+        }
+        stage('DeliverAnalytics'){
+            agent { label 'built-in' }
+            steps {
+                echo "Moviendo resultados de analytics a la carpeta de Filebrowser..."
+                script {
+                    unstash 'analytics-results'
+                    sh '''
+                    set -eux
+                    mkdir -p /var/jenkins_home/BuildDatabase/files/analytics/build${BUILD_NUMBER}
+                    cp -R TelemetrySystem/analytics/results/. /var/jenkins_home/BuildDatabase/files/analytics/build${BUILD_NUMBER}/
+                    '''
+                }
             }
         }
         stage('Deliver'){
@@ -63,8 +98,9 @@ pipeline {
                     Puedes revisar los detalles aquí: ${BUILD_URL}
 
                     Enlace a la build: http://localhost:1000/files/build${BUILD_NUMBER}.zip
-                    
-                    Un coordial saludo, 
+                    Resultados de analytics: http://localhost:1000/files/analytics/build${BUILD_NUMBER}/
+
+                    Un coordial saludo,
                     Jenkins.""",
                     to: emailextrecipients([
                         [$class: 'DevelopersRecipientProvider']
@@ -76,10 +112,10 @@ pipeline {
             script{
                 emailext (
                     subject: "Build Fallida de Cronopunk - ${BUILD_NUMBER}",
-                    body: """Hola, 
-                    Eres un ruina. La build ha fallado. 
+                    body: """Hola,
+                    Eres un ruina. La build ha fallado.
                     Revisa los logs en: ${BUILD_URL}
-                    
+
                     Un coordial saludo, 
                     Jenkins.""",
                     to: emailextrecipients([
