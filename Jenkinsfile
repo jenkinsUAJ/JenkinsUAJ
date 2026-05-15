@@ -28,6 +28,8 @@ pipeline {
             }
             post {
                 always {
+                    archiveArtifacts artifacts: 'Builds/**/*.log'
+                    archiveArtifacts artifacts: 'Builds/**/*.xml'
                     junit testResults: 'Builds/*/editmode-results.xml'
                 }
             }
@@ -50,6 +52,8 @@ pipeline {
             }
             post {
                 always {
+                    archiveArtifacts artifacts: 'Builds/**/*.log'
+                    archiveArtifacts artifacts: 'Builds/**/*.xml'
                     junit testResults: 'Builds/*/playmode-results.xml'
                 }
             }
