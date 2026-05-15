@@ -23,8 +23,13 @@ pipeline {
              steps {
                 echo "Ejecutando tests prebuild"
                 bat '''
-                %UNITY_PATH% -batchmode -quit -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform EditMode -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode-results.xml" -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode.log" 
+                %UNITY_PATH% -batchmode -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform EditMode -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode-results.xml" -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode.log" 
                 '''
+            }
+            post {
+                always {
+                    junit testResults: 'Builds/*/editmode-results.xml'
+                }
             }
         }
         stage('Build') {
@@ -40,8 +45,13 @@ pipeline {
              steps {
                 echo "Ejecutando tests postbuild"
                 bat '''
-                %UNITY_PATH% -batchmode -quit -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform PlayMode -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/playmode-results.xml" -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/playmode.log" 
+                %UNITY_PATH% -batchmode -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform PlayMode -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/playmode-results.xml" -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/playmode.log" 
                 '''
+            }
+            post {
+                always {
+                    junit testResults: 'Builds/*/playmode-results.xml'
+                }
             }
         }
         stage('Analytics') {
