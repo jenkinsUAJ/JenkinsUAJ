@@ -29,20 +29,13 @@ pipeline {
             }
         }
         stage('Analytics') {
-            agent {
-                docker {
-                    image 'python:3.11-slim'
-                    label 'built-in'
-                }
-            }
             steps {
                 echo "Ejecutando analisis de datos en Python..."
-                sh '''
-                set -eux
-                cd TelemetrySystem/analytics
+                bat '''
+                cd TelemetrySystem\\analytics
                 python -m venv venv
-                . venv/bin/activate
-                pip install --upgrade pip
+                call venv\\Scripts\\activate.bat
+                python -m pip install --upgrade pip
                 pip install -r requirements.txt
                 python main.py
                 '''
