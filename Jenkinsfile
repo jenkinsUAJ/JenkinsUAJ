@@ -19,12 +19,28 @@ pipeline {
                 '''
             }
         }
+        stage('Test prebuild'){
+             steps {
+                echo "Ejecutando tests prebuild"
+                bat '''
+                %UNITY_PATH% -batchmode -quit -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform EditMode -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode-results.xml" -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode.log" 
+                '''
+            }
+        }
         stage('Build') {
             steps {
                 echo pwd()
                 echo "Building Game ..."
                 bat '''
                 %UNITY_PATH% -executeMethod CustomBuild.BuildWindowsPlayer -buildTarget StandaloneWindows64 -batchmode -quit -projectPath "%WORKSPACE%/ChronoPunk" -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/build.log" -buildPath "%WORKSPACE%/Builds/%BUILD_NUMBER%"
+                '''
+            }
+        }
+        stage('Test postbuild'){
+             steps {
+                echo "Ejecutando tests postbuild"
+                bat '''
+                %UNITY_PATH% -batchmode -quit -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform PlayMode -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/playmode-results.xml" -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/playmode.log" 
                 '''
             }
         }
