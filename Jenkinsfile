@@ -23,7 +23,7 @@ pipeline {
              steps {
                 echo "Ejecutando tests prebuild"
                 bat '''
-                %UNITY_PATH% -batchmode -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform EditMode -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode-results.xml" -testResultsResultsFormat junit -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode.log" 
+                %UNITY_PATH% -batchmode -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform EditMode -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode-results.xml" -testResultsFormat junit -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode.log" 
                 '''
             }
             post {
@@ -47,7 +47,7 @@ pipeline {
              steps {
                 echo "Ejecutando tests postbuild"
                 bat '''
-                %UNITY_PATH% -batchmode -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform PlayMode -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/playmode-results.xml" -testResultsResultsFormat junit -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/playmode.log" 
+                %UNITY_PATH% -batchmode -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform PlayMode -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/playmode-results.xml" -testResultsFormat junit -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/playmode.log" 
                 '''
             }
             post {
