@@ -30,7 +30,7 @@ pipeline {
                 always {
                     archiveArtifacts artifacts: 'Builds/**/*.log'
                     archiveArtifacts artifacts: 'Builds/**/*.xml'
-                    junit testResults: 'Builds/**/*.xml'
+                    nunit testResults: 'Builds/**/*.xml'
                 }
             }
         }
@@ -54,7 +54,7 @@ pipeline {
                 always {
                     archiveArtifacts artifacts: 'Builds/**/*.log'
                     archiveArtifacts artifacts: 'Builds/**/*.xml'
-                    junit testResults: 'Builds/**/*.xml'
+                    nunit testResults: 'Builds/**/*.xml'
                 }
             }
         }
