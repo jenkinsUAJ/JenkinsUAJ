@@ -21,8 +21,6 @@ pipeline {
             }
             post {
                 always {
-                    archiveArtifacts artifacts: 'Builds/**/*.log'
-                    archiveArtifacts artifacts: 'Builds/**/*.xml'
                     junit testResults: '%WORKSPACE%/StageBats/outTelemetryTest.xml'
                 }
             }

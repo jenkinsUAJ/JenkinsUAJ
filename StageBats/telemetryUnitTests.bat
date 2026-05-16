@@ -5,9 +5,9 @@ set MSBUILD_PATH=C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild
 set SOLUTION_DIR=%~dp0..\TelemetrySystem\TelemetrySystem\Telemetry.sln
 set BIN_DIR=%~dp0..\TelemetrySystem\TelemetrySystem\bin\Debug
 
-"%MSBUILD_PATH%" "%SOLUTION_DIR%" -p:Configuration=Debug -p:Platform=x64
+"%MSBUILD_PATH%" "%SOLUTION_DIR%" -p:Configuration=Debug -p:Platform=x64 /verbosity:quiet
 
-"%BIN_DIR%\TestTelemetry.exe" --r junit --out %~dp0\outTelemetryTest.xml
+"%BIN_DIR%\TestTelemetry.exe" -r junit --out %~dp0\outTelemetryTest.xml
 
 if %ERRORLEVEL% EQU 0 (
     echo Todos los test han salido bien.
