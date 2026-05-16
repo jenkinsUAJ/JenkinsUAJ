@@ -15,8 +15,16 @@ pipeline {
             steps {
                 echo "Ejecutando tests de unidad a la telemetría..."
                 bat '''
+                cd ./StageBats
                 "%WORKSPACE%/StageBats/telemetryUnitTests.bat"
                 '''
+            }
+            post {
+                always {
+                    archiveArtifacts artifacts: 'Builds/**/*.log'
+                    archiveArtifacts artifacts: 'Builds/**/*.xml'
+                    junit testResults: '%WORKSPACE%/StageBats/outTelemetryTest.xml'
+                }
             }
         }
         stage('Test prebuild'){
