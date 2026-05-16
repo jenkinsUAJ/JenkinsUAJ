@@ -26,7 +26,7 @@ pipeline {
             }
             post {
                 always {
-                    junit testResults: 'StageBats/outTelemetryTest.xml', 
+                    junit testResults: 'StageBats/outTelemetryTest.xml'
                 }
             }
         }
