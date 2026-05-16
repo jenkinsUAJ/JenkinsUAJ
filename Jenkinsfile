@@ -13,15 +13,19 @@ pipeline {
     stages {
         stage('Unit Tests Telemetry'){
             steps {
-                echo "Ejecutando tests de unidad a la telemetría..."
-                bat '''
-                cd ./StageBats
-                "%WORKSPACE%/StageBats/telemetryUnitTests.bat"
-                '''
+                // este stage 
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
+                    echo "Ejecutando tests de unidad a la telemetría..."
+                    bat '''
+                    cd ./StageBats
+                    "%WORKSPACE%/StageBats/telemetryUnitTests.bat"
+                    cd ..
+                    '''
+                }
             }
             post {
                 always {
-                    junit testResults: '%WORKSPACE%/StageBats/outTelemetryTest.xml'
+                    junit testResults: 'StageBats/outTelemetryTest.xml'
                 }
             }
         }
