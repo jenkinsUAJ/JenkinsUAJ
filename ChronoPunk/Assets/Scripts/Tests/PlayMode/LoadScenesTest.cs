@@ -48,6 +48,8 @@ public class LoadScenesTest
                 yield return null;
             }
 
+            yield return new WaitForEndOfFrame();
+
             Scene activeScene =
                 SceneManager.GetActiveScene();
 
