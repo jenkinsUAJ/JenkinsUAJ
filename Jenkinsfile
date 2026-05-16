@@ -80,7 +80,7 @@ pipeline {
                     nunit testResultsPattern: "Builds/${BUILD_NUMBER}/playmode-results.xml", failedTestsFailBuild:true
                     script{
                         if(currentBuild.result == 'FAILURE'){
-                            error "Fallo en los test Pre-Build, revisa el log"
+                            error "Fallo en los test Post-Build, revisa el log"
                         }
                     }
                 }

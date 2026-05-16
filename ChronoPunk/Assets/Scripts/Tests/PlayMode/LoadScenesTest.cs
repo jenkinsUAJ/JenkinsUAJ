@@ -41,7 +41,7 @@ public class LoadScenesTest
             Debug.Log("Cheking loading scene : " +sceneName);
 
             AsyncOperation operation =
-                SceneManager.LoadSceneAsync(i);
+                SceneManager.LoadSceneAsync(sceneName);
 
             while (!operation.isDone)
             {
