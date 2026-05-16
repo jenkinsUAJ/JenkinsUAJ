@@ -43,7 +43,7 @@ public class CustomBuild
             scenes = FillLevels(),
             locationPathName = path + "/MyGame.exe",
             target = BuildTarget.StandaloneWindows64,
-            options = BuildOptions.AutoRunPlayer
+            options = BuildOptions.None
         };
 
         // Build the Player

@@ -11,39 +11,43 @@ remote.allowAnyHosts = true
 pipeline {
     agent {label 'unity-build'}
     stages {
-        stage('Unit Tests Telemetry'){
-            steps {
-                // este stage 
-                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
-                    echo "Ejecutando tests de unidad a la telemetría..."
-                    bat '''
-                    cd ./StageBats
-                    "%WORKSPACE%/StageBats/telemetryUnitTests.bat"
-                    cd ..
-                    '''
+        stage('Pre-Build'){
+            pararell{
+                stage('Unit Tests Telemetry'){
+                    steps {
+                        // este stage 
+                        catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE'){
+                            echo "Ejecutando tests de unidad a la telemetría..."
+                            bat '''
+                            cd ./StageBats
+                            "%WORKSPACE%/StageBats/telemetryUnitTests.bat"
+                            cd ..
+                            '''
+                        }
+                    }
+                    post {
+                        always {
+                            junit testResults: 'StageBats/outTelemetryTest.xml'
+                        }
+                    }
                 }
-            }
-            post {
-                always {
-                    junit testResults: 'StageBats/outTelemetryTest.xml'
-                }
-            }
-        }
-        stage('Test prebuild'){
-             steps {
-                echo "Ejecutando tests prebuild"
-                bat '''
-                %UNITY_PATH% -batchmode -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform EditMode -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode-results.xml" -testResultsFormatter junit -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode.log" 
-                '''
-                bat '''
-                python nunit_to_junit.py "%WORKSPACE%\\Builds\\%BUILD_NUMBER%\\editmode-results.xml" "%WORKSPACE%\\Builds\\%BUILD_NUMBER%\\editmode-junit.xml"
-                '''
-            }
-            post {
-                always {
-                    archiveArtifacts artifacts: 'Builds/**/*.log'
-                    archiveArtifacts artifacts: 'Builds/**/*.xml'
-                    junit testResults: 'Builds/**/*junit.xml'
+                stage('Asset Test'){
+                    steps {
+                        echo "Ejecutando tests prebuild"
+                        bat '''
+                        %UNITY_PATH% -batchmode -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform EditMode -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode-results.xml" -testResultsFormatter junit -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode.log" 
+                        '''
+                        bat '''
+                        python nunit_to_junit.py "%WORKSPACE%\\Builds\\%BUILD_NUMBER%\\editmode-results.xml" "%WORKSPACE%\\Builds\\%BUILD_NUMBER%\\editmode-junit.xml"
+                        '''
+                    }
+                    post {
+                        always {
+                            archiveArtifacts artifacts: 'Builds/**/*.log'
+                            archiveArtifacts artifacts: 'Builds/**/*.xml'
+                            junit testResults: 'Builds/**/*junit.xml'
+                        }
+                    }
                 }
             }
         }
