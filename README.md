@@ -12,6 +12,14 @@ CI con Jenkins
 - Tener visual studio 2022
 - Tener Java JDK
 
+## Plugins de jenkins requeridos
+
+- Pipeline Utility Steps
+- SSH Pipeline Steps
+- Email Extension Plugin
+- NUnit plugin
+- JUnit Plugin
+
 ### 1- Instalar jenkins en un contenedor de Docker
 1- Tener instalado docker desktop, sino descargarlo de aquí https://docs.docker.com/desktop/setup/install/windows-install/
 

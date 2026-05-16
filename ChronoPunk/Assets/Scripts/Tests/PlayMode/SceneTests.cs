@@ -21,9 +21,13 @@ public class SceneTests
 
             string nextLevel = levelData.levels[i + 1].name;
 
-            SceneManager.LoadScene(currentLevel);
+            AsyncOperation operation =
+                SceneManager.LoadSceneAsync(currentLevel);
 
-            yield return new WaitForSeconds(1f);
+            while (!operation.isDone)
+            {
+                yield return null;
+            }
 
             GameObject player = GameObject.FindGameObjectWithTag("Player");
 
@@ -37,7 +41,7 @@ public class SceneTests
                 goal.transform.position;
 
             // Esperar cambio de escena
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(1f);
 
             Assert.IsTrue(SceneManager.GetActiveScene().name == nextLevel,
                 $"No se ha conseguido navegar desde {currentLevel} hasta {nextLevel}, solo se ha llegado a {SceneManager.GetActiveScene().name}");
