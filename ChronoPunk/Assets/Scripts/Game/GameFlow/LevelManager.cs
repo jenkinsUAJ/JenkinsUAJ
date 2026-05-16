@@ -73,6 +73,9 @@ namespace GameFlow
             {
                 _playStartSong = false;
             }
+
+            //descomentando esta linea no pasa el test de carga de escenas
+            //Debug.LogError("error prueba tests");
         }
 
         private void OnDestroy()
@@ -161,6 +164,8 @@ namespace GameFlow
             {
                 Debug.LogWarning("No ha sido asignada una escena de menú principal");
             }
+
+
             if (levelSelectionSceneAsset != null)
             {
                 //levelSelectionSceneName = levelSelectionSceneAsset.name;
@@ -169,11 +174,32 @@ namespace GameFlow
             {
                 Debug.LogWarning("No ha sido asignada una escena de selección de niveles");
             }
+
+
+            //lo quitamos de la cola para evitar acumulacion de llamadas a la funcion (se podria hacer con un bool)
+            UnityEditor.EditorApplication.delayCall -= DelayedValidate;
+                
+            //lo metemos a la cola una unica vez
+            UnityEditor.EditorApplication.delayCall += DelayedValidate;
+          
+        }
+
+        /** OnValidate puede ser llamado antes de que se terminen de settear correctamente referencias del editor, por 
+         * lo que para cierto tipo de comprobaciones como verificar si una referencia esta asignada, es mas seguro usar una 
+         * validacion en el siguiente tick del editor
+         * 
+         * IMPORTANTE: esto solo arregla warnigns de editor no de tests
+         * 
+         */
+        private void DelayedValidate()
+        {
             if (levelsDataSerial == null)
             {
                 Debug.LogWarning("Necesita una LevelsData.");
             }
         }
+
+
 #endif
         private void LoadLevel()
         {
