@@ -26,7 +26,7 @@ pipeline {
             }
             post {
                 always {
-                    junit testResults: 'StageBats/outTelemetryTest.xml'
+                    junit testResults: 'StageBats/outTelemetryTest.xml', 
                 }
             }
         }
@@ -44,7 +44,12 @@ pipeline {
                 always {
                     archiveArtifacts artifacts: "Builds/${BUILD_NUMBER}/*.log"
                     archiveArtifacts artifacts: "Builds/${BUILD_NUMBER}/*.xml"
-                    nunit testResultsPattern: "Builds/${BUILD_NUMBER}/editmode-results.xml"
+                    nunit testResultsPattern: "Builds/${BUILD_NUMBER}/editmode-results.xml", failedTestsFailBuild:true
+                    script{
+                        if(currentBuild.result == 'FAILURE'){
+                            error "Fallo en los test Pre-Build, revisa el log"
+                        }
+                    }
                 }
             }
         }
@@ -72,7 +77,12 @@ pipeline {
                 always {
                     archiveArtifacts artifacts: "Builds/${BUILD_NUMBER}/*.log"
                     archiveArtifacts artifacts: "Builds/${BUILD_NUMBER}/*.xml"
-                    nunit testResultsPattern: "Builds/${BUILD_NUMBER}/playmode-results.xml"
+                    nunit testResultsPattern: "Builds/${BUILD_NUMBER}/playmode-results.xml", failedTestsFailBuild:true
+                    script{
+                        if(currentBuild.result == 'FAILURE'){
+                            error "Fallo en los test Pre-Build, revisa el log"
+                        }
+                    }
                 }
             }
         }
