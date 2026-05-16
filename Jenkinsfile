@@ -42,9 +42,9 @@ pipeline {
             }
             post {
                 always {
-                    archiveArtifacts artifacts: 'Builds/**/*.log'
-                    archiveArtifacts artifacts: 'Builds/**/*.xml'
-                    junit testResults: 'Builds/**/*junit.xml'
+                    archiveArtifacts artifacts: "Builds/${BUILD_NUMBER}/*.log"
+                    archiveArtifacts artifacts: "Builds/${BUILD_NUMBER}/*.xml"
+                    nunit testResults: "Builds/${BUILD_NUMBER}/editmode-results.xml"
                 }
             }
         }
@@ -70,9 +70,9 @@ pipeline {
             }
             post {
                 always {
-                    archiveArtifacts artifacts: 'Builds/**/*.log'
-                    archiveArtifacts artifacts: 'Builds/**/*.xml'
-                    junit testResults: 'Builds/**/*junit.xml'
+                    archiveArtifacts artifacts: "Builds/${BUILD_NUMBER}/*.log"
+                    archiveArtifacts artifacts: "Builds/${BUILD_NUMBER}/*.xml"
+                    nunit testResults: "Builds/${BUILD_NUMBER}/editmode-results.xml"
                 }
             }
         }
