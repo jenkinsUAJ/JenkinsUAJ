@@ -248,11 +248,15 @@ public class PlayLevelsTest
                 SceneManager.GetActiveScene().name,
                 $"No se completó el nivel {sceneName} al reproducir la partida guardada."
             );
+
+            yield return null;
         }
         finally
         {
             TestRecordManager.ResetForTests();
         }
+
+        yield return null;
     }
 
     private static void PrepareSceneForTestPlayback(

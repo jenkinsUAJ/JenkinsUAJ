@@ -20,64 +20,81 @@ public class LoadScenesTest
           };
 
         Application.logMessageReceived += handler;
-
-
-        int sceneCount =
-            SceneManager.sceneCountInBuildSettings;
-
-        for (int i = 0; i < sceneCount; i++)
+        try
         {
+            int sceneCount =
+                SceneManager.sceneCountInBuildSettings;
 
-            logs.Clear();
+            for (int i = 0; i < sceneCount; i++)
+            {
 
-            string scenePath =
-                SceneUtility.GetScenePathByBuildIndex(i);
+                logs.Clear();
 
-            string sceneName =
-                System.IO.Path.GetFileNameWithoutExtension(
-                    scenePath
+                string scenePath =
+                    SceneUtility.GetScenePathByBuildIndex(i);
+
+                string sceneName =
+                    System.IO.Path.GetFileNameWithoutExtension(
+                        scenePath
+                    );
+
+                Debug.Log("Cheking loading scene : " +sceneName);
+
+                AsyncOperation operation =
+                    SceneManager.LoadSceneAsync(sceneName);
+
+                while (!operation.isDone)
+                {
+                    yield return null;
+                }
+
+                //esperamos un par de frames para que se actualize el active scene
+                yield return null;
+                yield return null;
+
+                Scene activeScene =
+                    SceneManager.GetActiveScene();
+
+                Assert.AreEqual(
+                    sceneName,
+                    activeScene.name
                 );
 
-            Debug.Log("Cheking loading scene : " +sceneName);
+                Assert.IsTrue(
+                    activeScene.isLoaded
+                );
 
-            AsyncOperation operation =
-                SceneManager.LoadSceneAsync(sceneName);
 
-            while (!operation.isDone)
-            {
+
+                //detectamos solo logs de errores
+                Assert.IsFalse(logs.Contains(LogType.Error));
+
+                //no lo usamos ya que detecta tambien warnings
+                //LogAssert.NoUnexpectedReceived();
+
+                Debug.Log("Scene " + sceneName + " loaded correctly");
+
                 yield return null;
             }
-
-            //esperamos un par de frames para que se actualize el active scene
-            yield return null;
-            yield return null;
-
-            Scene activeScene =
-                SceneManager.GetActiveScene();
-
-            Assert.AreEqual(
-                sceneName,
-                activeScene.name
-            );
-
-            Assert.IsTrue(
-                activeScene.isLoaded
-            );
-
-
-
-            //detectamos solo logs de errores
-            Assert.IsFalse(logs.Contains(LogType.Error));
-
-            //no lo usamos ya que detecta tambien warnings
-            //LogAssert.NoUnexpectedReceived();
-
-            yield return null;
         }
+        finally
+        {
+            Application.logMessageReceived -= handler;
 
+            if (PauseManager.Instance != null)
+            {
+                PauseManager.Instance.SetPause(false);
+            }
 
-        Application.logMessageReceived -= handler;
+            if (ReplayManager.Instance != null)
+            {
+                ReplayManager.Instance.ClearExistingReplicants();
+            }
 
+            TestRecordManager.ResetForTests();
+        }
+        
+        yield return null;
 
     }
 

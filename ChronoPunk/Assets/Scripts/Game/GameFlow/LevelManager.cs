@@ -82,6 +82,10 @@ namespace GameFlow
         {
             // Desuscribirse del evento para evitar memory leaks
             SceneManager.sceneLoaded -= OnSceneLoaded;
+            if (Instance == this)
+            {
+                Instance = null;
+            }
         }
 
         private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
