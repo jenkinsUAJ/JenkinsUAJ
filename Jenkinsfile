@@ -80,14 +80,12 @@ pipeline {
             }
         }
         stage('Long'){
-            when {
+           when {
                 expression {
-                    def tags = bat(
-                        script: "git tag --points-at HEAD",
-                        returnStdout: true
-                    ).trim()
-
-                    return tags != ""
+                    return bat(
+                        script: "git describe --exact-match --tags HEAD",
+                        returnStatus: true
+                    ) == 0
                 }
             }
              steps {
