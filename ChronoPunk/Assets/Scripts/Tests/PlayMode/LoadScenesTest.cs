@@ -48,6 +48,7 @@ public class LoadScenesTest
                 yield return null;
             }
 
+            //esperamos un par de frames para que se actualize el active scene
             yield return null;
             yield return null;
 

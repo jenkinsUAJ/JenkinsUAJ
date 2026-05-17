@@ -34,6 +34,11 @@ public abstract class Activador : MonoBehaviour
     protected void SendToActivables(bool state)
     {
         foreach (var act in activables) {
+            if (act == null || act.gameObject == null || !act.gameObject.scene.isLoaded)
+            {
+                continue;
+            }
+
             if (act is IActivable activable) {
                 activable.Activar(state);
             }
@@ -58,6 +63,11 @@ public abstract class Activador : MonoBehaviour
     {
         foreach (var act in activables)
         {
+            if (act == null || act.gameObject == null || !act.gameObject.scene.isLoaded)
+            {
+                continue;
+            }
+
             if (act is IActivable activable)
             {
                 activable.SwicthActivableState();

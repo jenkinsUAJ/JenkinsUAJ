@@ -32,6 +32,16 @@ public class ButtonController : Activador
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        if (!isActiveAndEnabled || !gameObject.scene.isLoaded)
+        {
+            return;
+        }
+
+        if (other == null || other.gameObject == null)
+        {
+            return;
+        }
+
         if (other.gameObject.GetComponent<Cronopunk.Movement.PlayerMovementKinematic>() != null)
         {
             _nUsers--;

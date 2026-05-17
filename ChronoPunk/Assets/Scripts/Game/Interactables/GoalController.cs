@@ -13,14 +13,28 @@ public class GoalController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == goalTarget.name)
+        if (IsGoalReachedByWinner(other))
         {
             //Sacar un mensaje de que has ganado
             //Fade out y cambiar de escena
-            other.gameObject.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(0, 0);
-            other.gameObject.GetComponent<Cronopunk.Movement.PlayerMovementKinematic>().enabled = false;
-            Telemetry.TelemetryDispatch.SendLevelEnd();
+            Rigidbody2D rigidbody2D = other.gameObject.GetComponent<Rigidbody2D>();
+            if (rigidbody2D != null)
+            {
+                rigidbody2D.linearVelocity = new Vector2(0, 0);
+            }
+            Cronopunk.Movement.PlayerMovementKinematic movement = other.gameObject.GetComponent<Cronopunk.Movement.PlayerMovementKinematic>();
+            if (movement != null)
+            {
+                movement.enabled = false;
+            }
             //AudioManager.Instance.PlayVictory();
+
+            if (TestRecordManager.Instance != null && TestRecordManager.Instance.TryFinalizeRecording())
+            {
+                return;
+            }
+
+            Telemetry.TelemetryDispatch.SendLevelEnd();
 
             LevelManager.Instance.NextLevel();
         }
@@ -28,6 +42,22 @@ public class GoalController : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+    }
+
+    private bool IsGoalReachedByWinner(Collider2D other)
+    {
+        if (other.gameObject.name == goalTarget.name)
+        {
+            return true;
+        }
+
+        // En tests de replay (modo solo lectura), permitimos que una sombra valide el nivel.
+        if (TestRecordManager.ForceReadOnlyMode && other.CompareTag("Shadow"))
+        {
+            return true;
+        }
+
+        return false;
     }
 
 #if UNITY_EDITOR

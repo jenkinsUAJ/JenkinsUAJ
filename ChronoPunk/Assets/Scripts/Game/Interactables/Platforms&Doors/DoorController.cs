@@ -48,17 +48,40 @@ public class DoorController : MonoBehaviour, IActivable
 
 
     private void UpdateDoorState() {
-        _coll.enabled = isClosed;
-        firstHalf.sprite = isClosed ? closeSpriteFirstHalf : openSpriteFirstHalf;
-        secondHalf.sprite = isClosed ? closeSpriteSecondHalf : openSpriteSecondHalf;
+        if (!isActiveAndEnabled || !gameObject.scene.isLoaded)
+        {
+            return;
+        }
+
+        if (_coll != null && _coll.gameObject != null)
+        {
+            _coll.enabled = isClosed;
+        }
+        if (firstHalf != null)
+        {
+            firstHalf.sprite = isClosed ? closeSpriteFirstHalf : openSpriteFirstHalf;
+        }
+
+        if (secondHalf != null)
+        {
+            secondHalf.sprite = isClosed ? closeSpriteSecondHalf : openSpriteSecondHalf;
+        }
 
         if (isClosed)
         {
-            GetComponent<ActivatorAudio>().PlayDeactivate();
+            ActivatorAudio activatorAudio = GetComponent<ActivatorAudio>();
+            if (activatorAudio != null)
+            {
+                activatorAudio.PlayDeactivate();
+            }
         }
         else
         {
-            GetComponent<ActivatorAudio>().PlayActivate();
+            ActivatorAudio activatorAudio = GetComponent<ActivatorAudio>();
+            if (activatorAudio != null)
+            {
+                activatorAudio.PlayActivate();
+            }
         }
     }
 
