@@ -1,0 +1,101 @@
+{
+    "sceneName": "Basico_01",
+    "createdAtUtc": "2026-05-17T01:04:48.2666564Z",
+    "slots": [
+        {
+            "slotId": 0,
+            "inputs": [
+                {
+                    "actionType": 2,
+                    "fixedFrameStamp": 7,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 0,
+                    "fixedFrameStamp": 11,
+                    "direction": {
+                        "x": 1.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 74,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": true
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 97,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 137,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": true
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 158,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 182,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": true
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 203,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 243,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": true
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 292,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                }
+            ]
+        }
+    ]
+}

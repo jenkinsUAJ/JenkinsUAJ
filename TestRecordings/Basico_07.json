@@ -1,0 +1,408 @@
+{
+    "sceneName": "Basico_07",
+    "createdAtUtc": "2026-05-17T01:17:17.5454116Z",
+    "slots": [
+        {
+            "slotId": 0,
+            "inputs": [
+                {
+                    "actionType": 0,
+                    "fixedFrameStamp": 7,
+                    "direction": {
+                        "x": 1.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 45,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": true
+                },
+                {
+                    "actionType": 0,
+                    "fixedFrameStamp": 51,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 4,
+                    "fixedFrameStamp": 57,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                }
+            ]
+        },
+        {
+            "slotId": 1,
+            "inputs": [
+                {
+                    "actionType": 2,
+                    "fixedFrameStamp": 0,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 0,
+                    "fixedFrameStamp": 5,
+                    "direction": {
+                        "x": 1.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 36,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": true
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 80,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 127,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": true
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 142,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 183,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": true
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 226,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 244,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": true
+                },
+                {
+                    "actionType": 0,
+                    "fixedFrameStamp": 257,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 4,
+                    "fixedFrameStamp": 262,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                }
+            ]
+        },
+        {
+            "slotId": 2,
+            "inputs": [
+                {
+                    "actionType": 2,
+                    "fixedFrameStamp": 0,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 0,
+                    "fixedFrameStamp": 9,
+                    "direction": {
+                        "x": 1.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 34,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": true
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 74,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 80,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": true
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 95,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 126,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": true
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 140,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 181,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": true
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 229,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 256,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": true
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 265,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 0,
+                    "fixedFrameStamp": 266,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 269,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": true
+                },
+                {
+                    "actionType": 0,
+                    "fixedFrameStamp": 271,
+                    "direction": {
+                        "x": -1.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 277,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 0,
+                    "fixedFrameStamp": 294,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 324,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": true
+                },
+                {
+                    "actionType": 0,
+                    "fixedFrameStamp": 325,
+                    "direction": {
+                        "x": 1.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 348,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 0,
+                    "fixedFrameStamp": 350,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 0,
+                    "fixedFrameStamp": 387,
+                    "direction": {
+                        "x": -1.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 0,
+                    "fixedFrameStamp": 392,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 0,
+                    "fixedFrameStamp": 404,
+                    "direction": {
+                        "x": 1.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 0,
+                    "fixedFrameStamp": 408,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 0,
+                    "fixedFrameStamp": 447,
+                    "direction": {
+                        "x": 1.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 459,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": true
+                },
+                {
+                    "actionType": 1,
+                    "fixedFrameStamp": 526,
+                    "direction": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "isPressed": false
+                }
+            ]
+        }
+    ]
+}

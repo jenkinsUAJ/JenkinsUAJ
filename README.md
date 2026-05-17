@@ -85,6 +85,11 @@ Para ello hay que configurar y activar un contenedor de docker para hostear el s
 1- Ir a Administrar jenkins -> Credentials -> Add username with password -> En username ponemos: `jenkinsuaj@gmail.com` en password: `ozdt vilw emxl itqr` en ID: `gmail` -> Ahora volvemos a Administrar Jenkins -> System -> Bajamos hasta Extended E-mail Notification  
 2- En SMTP Server ponemos `smtp.gmail.com` en SMTP Port ponemos `465` -> Avanzado -> En credentials ponemos las credenciales que acabamos de crear -> Activamos la casilla de use SSL-> apply, save 
 
+### 6- Agregar input grabados para pruebas de niveles
+
+1- Copiar la carpeta completa : "TestRecordings/" en el directorio : C:\Users\$USER_NAME$\AppData\LocalLow\SusGus\CronoPunk\ 
+Esto es necesario para poder ejecutar ciertos tests sobre el juego
+
 
 ## Como usar
 
