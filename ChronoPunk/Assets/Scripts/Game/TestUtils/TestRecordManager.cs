@@ -208,7 +208,7 @@ public class TestRecordManager : MonoBehaviour
         if (Instance != null)
         {
             Instance.CancelRecordingSession();
-            Object.Destroy(Instance.gameObject);
+            UnityEngine.Object.Destroy(Instance.gameObject);
         }
     }
 
