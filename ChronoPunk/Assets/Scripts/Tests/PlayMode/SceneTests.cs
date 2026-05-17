@@ -7,7 +7,7 @@ using UnityEngine.TestTools;
 
 public class SceneTests
 {
-    [UnityTest]
+    [UnityTest, Category("Fast")]
     public IEnumerator SceneTestsLevelNavigation()
     {
         yield return CleanupPersistentRuntimeState();

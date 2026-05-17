@@ -19,61 +19,61 @@ public class PlayLevelsTest
     // WRAPPERS
     // =========================================================
 
-    [UnityTest]
+    [UnityTest, Category("Long")]
     public IEnumerator Play_Basico_01()
     {
         yield return RunSceneTestIfInBuild("Basico_01");
     }
 
-    [UnityTest]
+    [UnityTest, Category("Long")]
     public IEnumerator Play_Basico_02()
     {
         yield return RunSceneTestIfInBuild("Basico_02");
     }
 
-    [UnityTest]
+    [UnityTest, Category("Long")]
     public IEnumerator Play_Basico_03()
     {
         yield return RunSceneTestIfInBuild("Basico_03");
     }
 
-    [UnityTest]
+    [UnityTest, Category("Long")]
     public IEnumerator Play_Basico_04()
     {
         yield return RunSceneTestIfInBuild("Basico_04");
     }
 
-    [UnityTest]
+    [UnityTest, Category("Long")]
     public IEnumerator Play_Basico_05()
     {
         yield return RunSceneTestIfInBuild("Basico_05");
     }
 
-    [UnityTest]
+    [UnityTest, Category("Long")]
     public IEnumerator Play_Basico_06()
     {
         yield return RunSceneTestIfInBuild("Basico_06");
     }
 
-    [UnityTest]
+    [UnityTest, Category("Long")] 
     public IEnumerator Play_Basico_07()
     {
         yield return RunSceneTestIfInBuild("Basico_07");
     }
 
-    [UnityTest]
+    [UnityTest, Category("Long")]
     public IEnumerator Play_Basico_08()
     {
         yield return RunSceneTestIfInBuild("Basico_08");
     }
 
-    [UnityTest]
+    [UnityTest, Category("Long")]
     public IEnumerator Play_Basico_09()
     {
         yield return RunSceneTestIfInBuild("Basico_09");
     }
 
-    [UnityTest]
+    [UnityTest, Category("Long")]
     public IEnumerator Play_Basico_10()
     {
         yield return RunSceneTestIfInBuild("Basico_10");

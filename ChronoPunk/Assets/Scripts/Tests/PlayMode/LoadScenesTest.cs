@@ -8,7 +8,7 @@ using System.Collections.Generic;
 public class LoadScenesTest
 {
 
-    [UnityTest]
+    [UnityTest, Category("Fast")]
     public IEnumerator AllScenes_Load_Correctly()
     {
         List<LogType> logs = new List<LogType>();

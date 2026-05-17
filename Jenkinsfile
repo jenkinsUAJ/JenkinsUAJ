@@ -34,7 +34,7 @@ pipeline {
             steps {
                 echo "Ejecutando tests prebuild"
                 bat '''
-                %UNITY_PATH% -batchmode -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform EditMode -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode-results.xml" -testResultsFormatter junit -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode.log" 
+                %UNITY_PATH% -batchmode -quit -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform EditMode -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode-results.xml" -testResultsFormatter junit -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/editmode.log" 
                 '''
             }
             post {
@@ -50,7 +50,6 @@ pipeline {
                 }
             }
         }
-
         stage('Build') {
             steps {
                 echo pwd()
@@ -60,21 +59,44 @@ pipeline {
                 '''
             }
         }
-        stage('Test postbuild'){
+        stage('Fast'){
              steps {
-                echo "Ejecutando tests postbuild"
+                echo "Ejecutando tests Fast"
                 bat '''
-                %UNITY_PATH% -batchmode -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform PlayMode -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/playmode-results.xml" -testResultsFormatter junit -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/playmode.log" 
+                %UNITY_PATH% -batchmode -quit -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform PlayMode -testCategory Fast -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/fast-results.xml" -testResultsFormatter junit -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/fast.log" 
                 '''
             }
             post {
                 always {
                     archiveArtifacts artifacts: "Builds/${BUILD_NUMBER}/*.log"
                     archiveArtifacts artifacts: "Builds/${BUILD_NUMBER}/*.xml"
-                    nunit testResultsPattern: "Builds/${BUILD_NUMBER}/playmode-results.xml", failedTestsFailBuild:true
+                    nunit testResultsPattern: "Builds/${BUILD_NUMBER}/fast-results.xml", failedTestsFailBuild:true
                     script{
                         if(currentBuild.result == 'FAILURE'){
-                            error "Fallo en los test Post-Build, revisa el log"
+                            error "Fallo en los test Fast, revisa el log"
+                        }
+                    }
+                }
+            }
+        }
+        stage('Long'){
+             when {
+                buildingTag()
+            }
+             steps {
+                echo "Ejecutando tests Long"
+                bat '''
+                %UNITY_PATH% -batchmode -quit -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform PlayMode -testCategory Long -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/long-results.xml" -testResultsFormatter junit -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/long.log" 
+                '''
+            }
+            post {
+                always {
+                    archiveArtifacts artifacts: "Builds/${BUILD_NUMBER}/*.log"
+                    archiveArtifacts artifacts: "Builds/${BUILD_NUMBER}/*.xml"
+                    nunit testResultsPattern: "Builds/${BUILD_NUMBER}/long-results.xml", failedTestsFailBuild:true
+                    script{
+                        if(currentBuild.result == 'FAILURE'){
+                            error "Fallo en los test Long, revisa el log"
                         }
                     }
                 }
