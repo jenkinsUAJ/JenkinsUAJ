@@ -11,6 +11,9 @@ public class SceneTests
     {
         TestRecordManager.ResetForTests();
 
+        yield return null;
+
+
         LevelsData levelData =
             Resources.Load<LevelsData>("Build playtesting");
 
@@ -29,6 +32,9 @@ public class SceneTests
             {
                 yield return null;
             }
+
+            yield return null;
+
 
             GameObject player = GameObject.FindGameObjectWithTag("Player");
 
