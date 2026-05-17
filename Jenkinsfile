@@ -82,7 +82,7 @@ pipeline {
         stage('Long'){
             when {
                 expression {
-                    def tags = sh(
+                    def tags = bat(
                         script: "git tag --points-at HEAD",
                         returnStdout: true
                     ).trim()
