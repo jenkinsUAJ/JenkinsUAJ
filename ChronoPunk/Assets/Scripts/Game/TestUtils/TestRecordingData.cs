@@ -3,62 +3,18 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-/// <summary>
-/// Catálogo compartido para los niveles de test y utilidades de rutas de guardado.
-/// Lo consumen TestRecordManager, la ventana de editor y los tests de PlayMode.
-/// </summary>
-public static class TestLevelCatalog
-{
-    public static readonly string[] SceneFolders =
-    {
-        "Assets/Scenes/FinalNiveles/01_Basico"
-    };
 
-    public const string RecordingFolderName = "TestRecordings";
+/**
+ * En este fichero se encuentran varias clases para la serializacion de los eventos 
+ * - Serializacion de una partida completa (array de slots)
+ * - Serializacion de un slot (array de inputs)
+ * - Serializacion de un input (conversion entre input del juego y la clase auxiliar para la serializacion)
+ * 
+ * Las clases ofrecen metodos para convertir entre los datos serializados y los originales
+ */
 
-    public static string GetRecordingDirectory()
-    {
-        return Path.Combine(Application.persistentDataPath, RecordingFolderName);
-    }
 
-    public static string GetRecordingFilePath(string sceneName)
-    {
-        return Path.Combine(GetRecordingDirectory(), sceneName + ".json");
-    }
-
-    public static bool IsScenePathInConfiguredFolders(string scenePath)
-    {
-        string normalizedScenePath = NormalizePath(scenePath);
-
-        for (int i = 0; i < SceneFolders.Length; i++)
-        {
-            string normalizedFolder = NormalizePath(SceneFolders[i]);
-            if (normalizedScenePath.StartsWith(normalizedFolder, StringComparison.OrdinalIgnoreCase))
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    private static string NormalizePath(string path)
-    {
-        if (string.IsNullOrEmpty(path))
-        {
-            return string.Empty;
-        }
-
-        string normalized = path.Replace('\\', '/');
-        if (!normalized.EndsWith("/", StringComparison.Ordinal))
-        {
-            normalized += "/";
-        }
-
-        return normalized;
-    }
-}
-
+//serializable para poder guardarlo en fichero de forma sencilla
 [Serializable]
 /// <summary>
 /// Formato raíz del fichero JSON de grabación.
@@ -94,6 +50,7 @@ public class TestRecordingFileData
     }
 }
 
+//serializable para poder guardarlo en fichero de forma sencilla
 [Serializable]
 /// <summary>
 /// Datos serializables de un slot concreto dentro de una grabación.
@@ -132,6 +89,9 @@ public class TestRecordingSlotData
     }
 }
 
+
+
+//serializable para poder guardarlo en fichero de forma sencilla
 [Serializable]
 /// <summary>
 /// Representación serializable de un input grabado.

@@ -25,9 +25,13 @@ public class TestRecordManager : MonoBehaviour
 
     private bool _hasFinalizedRecording;
 
+    //se llama automaticamente al cargar una escena
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     private static void BootstrapIfRequested()
     {
+        //si no estamos en modo record salimos, si estamos, marcamos el editor prefs a false y hacemos lo que toque 
+
+
         if (ForceReadOnlyMode)
         {
             return;
@@ -39,6 +43,7 @@ public class TestRecordManager : MonoBehaviour
             return;
         }
 
+        //poner el bool a false para que no afecte a la siguiente iteracion
         UnityEditor.EditorPrefs.SetBool(EditorPrefsEnabledKey, false);
 #else
         return;
@@ -48,6 +53,7 @@ public class TestRecordManager : MonoBehaviour
         Instance.BeginRecordingSession(SceneManager.GetActiveScene().name);
     }
 
+    //crea artificialmente una instancia del manager
     public static TestRecordManager EnsureInstance()
     {
         if (Instance != null)
@@ -136,6 +142,7 @@ public class TestRecordManager : MonoBehaviour
 
     public bool TryFinalizeRecording()
     {
+        // Protección doble: nunca guardar si estamos en modo de solo lectura
         if (ForceReadOnlyMode)
         {
             return false;
@@ -151,13 +158,17 @@ public class TestRecordManager : MonoBehaviour
             RecordingSlotManager.Instance.StopCurrentRecording();
         }
 
-        TestRecordingFileData recording = CaptureCurrentRecording();
-        SaveRecording(recording);
+        // Verificación final: si de alguna forma llegamos aquí con ForceReadOnlyMode true, no guardamos
+        if (!ForceReadOnlyMode)
+        {
+            TestRecordingFileData recording = CaptureCurrentRecording();
+            SaveRecording(recording);
+            LastSavedRecording = recording;
+            Debug.Log($"[TestRecordManager] Recording saved to {CurrentFilePath}.");
+        }
 
-        LastSavedRecording = recording;
         IsRecordingSession = false;
         _hasFinalizedRecording = true;
-        Debug.Log($"[TestRecordManager] Recording saved to {CurrentFilePath}.");
 
     #if UNITY_EDITOR
         UnityEditor.EditorApplication.ExitPlaymode();
@@ -171,6 +182,7 @@ public class TestRecordManager : MonoBehaviour
         ForceReadOnlyMode = true;
 
 #if UNITY_EDITOR
+        // Limpiar EditorPrefs para evitar que BootstrapIfRequested cree instancia
         UnityEditor.EditorPrefs.SetBool(EditorPrefsEnabledKey, false);
 #endif
 
@@ -242,6 +254,13 @@ public class TestRecordManager : MonoBehaviour
 
     public void SaveRecording(TestRecordingFileData recording)
     {
+        // Protección: no guardar nunca si estamos en modo de solo lectura (tests)
+        if (ForceReadOnlyMode)
+        {
+            Debug.LogWarning("[TestRecordManager] Intento de guardar en modo solo lectura. Se ignora el guardado.");
+            return;
+        }
+
         if (recording == null)
         {
             return;

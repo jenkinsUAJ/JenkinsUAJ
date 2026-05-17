@@ -15,79 +15,239 @@ public class PlayLevelsTest
 {
     private const float MaxPlaybackSecondsPerLevel = 40f;
 
-    [UnityTest]
-    public IEnumerator PlayConfiguredLevels_WithSavedRecordings()
-    {
-        TestRecordManager.EnableReadOnlyModeForTests();
+    // =========================================================
+    // WRAPPERS
+    // =========================================================
 
-        List<string> scenePaths = GetConfiguredScenePathsFromBuildSettings();
-        Assert.IsNotEmpty(scenePaths, "No se han encontrado escenas de test dentro de las carpetas configuradas.");
+    [UnityTest]
+    public IEnumerator Play_Basico_01()
+    {
+        yield return RunSceneTestIfInBuild("Basico_01");
+    }
+
+    [UnityTest]
+    public IEnumerator Play_Basico_02()
+    {
+        yield return RunSceneTestIfInBuild("Basico_02");
+    }
+
+    [UnityTest]
+    public IEnumerator Play_Basico_03()
+    {
+        yield return RunSceneTestIfInBuild("Basico_03");
+    }
+
+    [UnityTest]
+    public IEnumerator Play_Basico_04()
+    {
+        yield return RunSceneTestIfInBuild("Basico_04");
+    }
+
+    [UnityTest]
+    public IEnumerator Play_Basico_05()
+    {
+        yield return RunSceneTestIfInBuild("Basico_05");
+    }
+
+    [UnityTest]
+    public IEnumerator Play_Basico_06()
+    {
+        yield return RunSceneTestIfInBuild("Basico_06");
+    }
+
+    [UnityTest]
+    public IEnumerator Play_Basico_07()
+    {
+        yield return RunSceneTestIfInBuild("Basico_07");
+    }
+
+    [UnityTest]
+    public IEnumerator Play_Basico_08()
+    {
+        yield return RunSceneTestIfInBuild("Basico_08");
+    }
+
+    [UnityTest]
+    public IEnumerator Play_Basico_09()
+    {
+        yield return RunSceneTestIfInBuild("Basico_09");
+    }
+
+    [UnityTest]
+    public IEnumerator Play_Basico_10()
+    {
+        yield return RunSceneTestIfInBuild("Basico_10");
+    }
+
+    // =========================================================
+    // CORE TEST
+    // =========================================================
+
+    private IEnumerator RunSceneTestIfInBuild(string sceneName)
+    {
+        if (!IsSceneInBuildSettings(sceneName))
+        {
+            Assert.Ignore(
+                $"Scene {sceneName} is not in Build Settings");
+        }
+
+        yield return RunSceneTest(sceneName);
+    }
+    private static bool IsSceneInBuildSettings(string sceneName)
+    {
+        int sceneCount =
+            SceneManager.sceneCountInBuildSettings;
+
+        for (int i = 0; i < sceneCount; i++)
+        {
+            string scenePath =
+                SceneUtility.GetScenePathByBuildIndex(i);
+
+            string buildSceneName =
+                System.IO.Path.GetFileNameWithoutExtension(
+                    scenePath);
+
+            if (buildSceneName == sceneName)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private IEnumerator RunSceneTest(string sceneName)
+    {
+        // Limpiar cualquier instancia anterior que haya quedado de tests previos
+        if (TestRecordManager.Instance != null)
+        {
+            Object.Destroy(TestRecordManager.Instance.gameObject);
+        }
+
+        TestRecordManager.EnableReadOnlyModeForTests();
 
         try
         {
-            for (int i = 0; i < scenePaths.Count; i++)
+            AsyncOperation loadOperation =
+                SceneManager.LoadSceneAsync(
+                    sceneName,
+                    LoadSceneMode.Single);
+
+            while (!loadOperation.isDone)
             {
-                string scenePath = scenePaths[i];
-                string sceneName = Path.GetFileNameWithoutExtension(scenePath);
-
-                AsyncOperation loadOperation = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
-                while (!loadOperation.isDone)
-                {
-                    yield return null;
-                }
-
                 yield return null;
-
-                Assert.AreEqual(sceneName, SceneManager.GetActiveScene().name, $"No se ha cargado la escena {sceneName}.");
-
-                string recordingFile = TestLevelCatalog.GetRecordingFilePath(sceneName);
-                TestRecordingFileData recording = TestRecordManager.LoadRecordingFromFile(recordingFile);
-                Assert.IsNotNull(recording, $"No existe fichero de recording para {sceneName} en {recordingFile}.");
-
-                Dictionary<int, List<RecordedInput>> loadedRecordings = recording.ToRecordedInputsBySlot();
-                Assert.IsNotEmpty(loadedRecordings, $"El fichero de recording de {sceneName} no contiene slots.");
-
-                int playerDriverSlot = SelectPlayerDriverSlot(loadedRecordings);
-                Assert.IsTrue(playerDriverSlot >= 0, $"No se ha podido seleccionar slot driver para {sceneName}.");
-
-                List<RecordedInput> playerInputs = loadedRecordings[playerDriverSlot];
-                Assert.IsNotEmpty(playerInputs, $"El slot driver {playerDriverSlot} de {sceneName} está vacío.");
-
-                RecordManager recordManager = RecordManager.Instance;
-                ReplayManager replayManager = ReplayManager.Instance;
-                Assert.IsNotNull(recordManager, $"No existe RecordManager en la escena {sceneName}.");
-                Assert.IsNotNull(replayManager, $"No existe ReplayManager en la escena {sceneName}.");
-
-                PrepareSceneForTestPlayback(loadedRecordings, playerDriverSlot, recordManager, replayManager);
-
-                GameObject player = GameObject.FindGameObjectWithTag("Player");
-                Assert.IsNotNull(player, $"No se encuentra Player en {sceneName}.");
-
-                PlayerMovementKinematic movement = player.GetComponent<PlayerMovementKinematic>();
-                Shoot shoot = player.GetComponent<Shoot>();
-                BalloonUser balloonUser = player.GetComponent<BalloonUser>();
-                Solidify solidify = player.GetComponent<Solidify>();
-                PlayerPerkController perkController = player.GetComponent<PlayerPerkController>();
-
-                Assert.IsNotNull(movement, $"El Player no tiene PlayerMovementKinematic en {sceneName}.");
-
-                yield return ReplayInputsOnPlayerUntilSceneChanges(
-                    sceneName,
-                    playerInputs,
-                    movement,
-                    shoot,
-                    balloonUser,
-                    solidify,
-                    perkController,
-                    MaxPlaybackSecondsPerLevel
-                );
-
-                Assert.AreNotEqual(
-                    sceneName,
-                    SceneManager.GetActiveScene().name,
-                    $"No se completó el nivel {sceneName} al reproducir la partida guardada."
-                );
             }
+
+            yield return null;
+
+            Assert.AreEqual(
+                sceneName,
+                SceneManager.GetActiveScene().name,
+                $"No se ha cargado la escena {sceneName}."
+            );
+
+            string recordingFile =
+                TestLevelCatalog.GetRecordingFilePath(sceneName);
+
+            TestRecordingFileData recording =
+                TestRecordManager.LoadRecordingFromFile(recordingFile);
+
+            Assert.IsNotNull(
+                recording,
+                $"No existe fichero de recording para {sceneName} en {recordingFile}."
+            );
+
+            Dictionary<int, List<RecordedInput>> loadedRecordings =
+                recording.ToRecordedInputsBySlot();
+
+            Assert.IsNotEmpty(
+                loadedRecordings,
+                $"El fichero de recording de {sceneName} no contiene slots."
+            );
+
+            int playerDriverSlot =
+                SelectPlayerDriverSlot(loadedRecordings);
+
+            Assert.IsTrue(
+                playerDriverSlot >= 0,
+                $"No se ha podido seleccionar slot driver para {sceneName}."
+            );
+
+            List<RecordedInput> playerInputs =
+                loadedRecordings[playerDriverSlot];
+
+            Assert.IsNotEmpty(
+                playerInputs,
+                $"El slot driver {playerDriverSlot} de {sceneName} está vacío."
+            );
+
+            RecordManager recordManager =
+                RecordManager.Instance;
+
+            ReplayManager replayManager =
+                ReplayManager.Instance;
+
+            Assert.IsNotNull(
+                recordManager,
+                $"No existe RecordManager en la escena {sceneName}."
+            );
+
+            Assert.IsNotNull(
+                replayManager,
+                $"No existe ReplayManager en la escena {sceneName}."
+            );
+
+            PrepareSceneForTestPlayback(
+                loadedRecordings,
+                playerDriverSlot,
+                recordManager,
+                replayManager
+            );
+
+            GameObject player =
+                GameObject.FindGameObjectWithTag("Player");
+
+            Assert.IsNotNull(
+                player,
+                $"No se encuentra Player en {sceneName}."
+            );
+
+            PlayerMovementKinematic movement =
+                player.GetComponent<PlayerMovementKinematic>();
+
+            Shoot shoot =
+                player.GetComponent<Shoot>();
+
+            BalloonUser balloonUser =
+                player.GetComponent<BalloonUser>();
+
+            Solidify solidify =
+                player.GetComponent<Solidify>();
+
+            PlayerPerkController perkController =
+                player.GetComponent<PlayerPerkController>();
+
+            Assert.IsNotNull(
+                movement,
+                $"El Player no tiene PlayerMovementKinematic en {sceneName}."
+            );
+
+            yield return ReplayInputsOnPlayerUntilSceneChanges(
+                sceneName,
+                playerInputs,
+                movement,
+                shoot,
+                balloonUser,
+                solidify,
+                perkController,
+                MaxPlaybackSecondsPerLevel
+            );
+
+            Assert.AreNotEqual(
+                sceneName,
+                SceneManager.GetActiveScene().name,
+                $"No se completó el nivel {sceneName} al reproducir la partida guardada."
+            );
         }
         finally
         {
@@ -117,10 +277,13 @@ public class PlayLevelsTest
                 continue;
             }
 
-            recordManager.allRecordings[entry.Key] = new List<RecordedInput>(entry.Value);
+            recordManager.allRecordings[entry.Key] =
+                new List<RecordedInput>(entry.Value);
         }
 
-        SelectShadow shadowMenu = Object.FindAnyObjectByType<SelectShadow>();
+        SelectShadow shadowMenu =
+            Object.FindAnyObjectByType<SelectShadow>();
+
         if (shadowMenu != null)
         {
             if (shadowMenu.textoEligeTuRama != null)
@@ -139,7 +302,8 @@ public class PlayLevelsTest
         replayManager.StartFullReplay();
     }
 
-    private static int SelectPlayerDriverSlot(Dictionary<int, List<RecordedInput>> recordings)
+    private static int SelectPlayerDriverSlot(
+        Dictionary<int, List<RecordedInput>> recordings)
     {
         int selectedSlot = -1;
         int farthestFrame = -1;
@@ -151,7 +315,9 @@ public class PlayLevelsTest
                 continue;
             }
 
-            int lastFrame = entry.Value[entry.Value.Count - 1].fixedFrameStamp;
+            int lastFrame =
+                entry.Value[entry.Value.Count - 1].fixedFrameStamp;
+
             if (lastFrame > farthestFrame)
             {
                 farthestFrame = lastFrame;
@@ -176,16 +342,28 @@ public class PlayLevelsTest
         int inputIndex = 0;
         float elapsed = 0f;
 
-        while (elapsed < timeoutSeconds && SceneManager.GetActiveScene().name == sourceSceneName)
+        while (
+            elapsed < timeoutSeconds &&
+            SceneManager.GetActiveScene().name == sourceSceneName)
         {
             yield return new WaitForFixedUpdate();
 
             elapsed += Time.fixedDeltaTime;
             frameCounter++;
 
-            while (inputIndex < playerInputs.Count && frameCounter >= playerInputs[inputIndex].fixedFrameStamp)
+            while (
+                inputIndex < playerInputs.Count &&
+                frameCounter >= playerInputs[inputIndex].fixedFrameStamp)
             {
-                ExecutePlayerInput(playerInputs[inputIndex], movement, shoot, balloonUser, solidify, perkController);
+                ExecutePlayerInput(
+                    playerInputs[inputIndex],
+                    movement,
+                    shoot,
+                    balloonUser,
+                    solidify,
+                    perkController
+                );
+
                 inputIndex++;
             }
         }
@@ -203,7 +381,8 @@ public class PlayLevelsTest
         {
             if (balloonUser != null && balloonUser.IsOnBalloon)
             {
-                balloonUser.CurrentBalloon.SetHorizontalInput(moveInput.direction.x);
+                balloonUser.CurrentBalloon.SetHorizontalInput(
+                    moveInput.direction.x);
             }
             else
             {
@@ -212,7 +391,9 @@ public class PlayLevelsTest
 
             if (shoot != null)
             {
-                Vector2 aimDirection = Shoot.QuantizeToEightDirections(moveInput.direction);
+                Vector2 aimDirection =
+                    Shoot.QuantizeToEightDirections(moveInput.direction);
+
                 shoot.SetAim(aimDirection);
             }
         }
@@ -258,21 +439,5 @@ public class PlayLevelsTest
                 perkController.UsePerk();
             }
         }
-    }
-
-    private static List<string> GetConfiguredScenePathsFromBuildSettings()
-    {
-        List<string> configuredScenes = new List<string>();
-
-        for (int i = 0; i < SceneManager.sceneCountInBuildSettings; i++)
-        {
-            string scenePath = SceneUtility.GetScenePathByBuildIndex(i);
-            if (TestLevelCatalog.IsScenePathInConfiguredFolders(scenePath))
-            {
-                configuredScenes.Add(scenePath);
-            }
-        }
-
-        return configuredScenes;
     }
 }

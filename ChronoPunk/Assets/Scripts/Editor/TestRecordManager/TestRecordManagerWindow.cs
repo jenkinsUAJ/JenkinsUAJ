@@ -1,3 +1,5 @@
+
+//solo con el editor (ademas el script se encuentra en la carpeta de editor)
 #if UNITY_EDITOR
 using System.Collections.Generic;
 using System.IO;
@@ -15,12 +17,16 @@ public class TestRecordManagerWindow : EditorWindow
     private Vector2 _savedFilesScroll;
     private int _selectedSceneIndex;
 
+
+    //Boton en el menu de tools
     [MenuItem("Tools/TestRecordManager")]
     public static void OpenRoot()
     {
+        //al pulsar el boton abrimos directamente la ventana
         Open();
     }
 
+    //crea la ventana (una instancia de esta misma clase)
     public static void Open()
     {
         GetWindow<TestRecordManagerWindow>("TestRecordManager");
@@ -31,8 +37,12 @@ public class TestRecordManagerWindow : EditorWindow
         RefreshScenes();
     }
 
+    //funcion que maneja el dibujado de la ventana
     private void OnGUI()
     {
+
+        //SCROLL DE PARTIDAS GUARDADAS
+
         EditorGUILayout.LabelField("Play recorded levels", EditorStyles.boldLabel);
         EditorGUILayout.Space(4f);
 
@@ -42,6 +52,9 @@ public class TestRecordManagerWindow : EditorWindow
         );
 
         DrawSavedFilesSection();
+
+
+        //BOTON DE ELEGIR NIVEL PARA JUGAR
 
         if (_scenePaths.Count == 0)
         {
@@ -63,12 +76,19 @@ public class TestRecordManagerWindow : EditorWindow
 
         EditorGUILayout.Space(8f);
 
+        //ACTUALIZAR LISTAS
+
         if (GUILayout.Button("Actualizar lista"))
         {
             RefreshScenes();
+        
         }
 
         EditorGUILayout.Space(8f);
+        
+        //INFO DE CARPETAS MARCADAS
+
+        
         EditorGUILayout.LabelField("Carpetas configuradas", EditorStyles.boldLabel);
 
         for (int i = 0; i < TestLevelCatalog.SceneFolders.Length; i++)
@@ -77,6 +97,7 @@ public class TestRecordManagerWindow : EditorWindow
         }
     }
 
+    //dibujado de partidas guardadas
     private void DrawSavedFilesSection()
     {
         EditorGUILayout.Space(6f);
