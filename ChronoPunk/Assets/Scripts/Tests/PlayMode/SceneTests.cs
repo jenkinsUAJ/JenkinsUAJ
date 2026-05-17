@@ -97,7 +97,7 @@ public class SceneTests
 
         if (GameFlow.LevelManager.Instance != null)
         {
-            Object.Destroy(GameFlow.LevelManager.Instance.gameObject);
+            //Object.Destroy(GameFlow.LevelManager.Instance.gameObject);
         }
 
         if (GameManager.Instance != null)
