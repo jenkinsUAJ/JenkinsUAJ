@@ -80,8 +80,15 @@ pipeline {
             }
         }
         stage('Long'){
-             when {
-                buildingTag()
+            when {
+                expression {
+                    def tags = sh(
+                        script: "git tag --points-at HEAD",
+                        returnStdout: true
+                    ).trim()
+
+                    return tags != ""
+                }
             }
              steps {
                 echo "Ejecutando tests Long"
