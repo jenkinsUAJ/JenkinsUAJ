@@ -9,6 +9,7 @@ public class SceneTests
     [UnityTest]
     public IEnumerator SceneTestsLevelNavigation()
     {
+        TestRecordManager.ResetForTests();
 
         LevelsData levelData =
             Resources.Load<LevelsData>("Build playtesting");

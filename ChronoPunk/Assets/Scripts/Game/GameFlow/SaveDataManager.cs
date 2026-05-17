@@ -31,6 +31,20 @@ public class SaveDataManager : ScriptableObject
     /// <param name="fileName">El nombre del fichero en el directorio</param>
     public static void Persist<T>(T objectToSave, string fileName)
     {
+        // Evitar writes durante ejecución de tests en modo solo lectura
+        try
+        {
+            if (TestRecordManager.ForceReadOnlyMode)
+            {
+                Debug.LogWarning($"[SaveDataManager] Read-only mode activo; se omite persistir {fileName}.");
+                return;
+            }
+        }
+        catch (System.Exception)
+        {
+            // Si TestRecordManager no está disponible por algún motivo, continuar con el flujo normal
+        }
+
         string json = JsonUtility.ToJson(objectToSave);
 
         File.WriteAllText(Application.persistentDataPath + fileName, json);

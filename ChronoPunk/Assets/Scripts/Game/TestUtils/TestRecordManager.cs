@@ -197,6 +197,21 @@ public class TestRecordManager : MonoBehaviour
         ForceReadOnlyMode = false;
     }
 
+    public static void ResetForTests()
+    {
+        ForceReadOnlyMode = false;
+
+#if UNITY_EDITOR
+        UnityEditor.EditorPrefs.SetBool(EditorPrefsEnabledKey, false);
+#endif
+
+        if (Instance != null)
+        {
+            Instance.CancelRecordingSession();
+            Object.Destroy(Instance.gameObject);
+        }
+    }
+
     private void CancelRecordingSession()
     {
         IsRecordingSession = false;

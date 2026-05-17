@@ -29,7 +29,9 @@ public class GoalController : MonoBehaviour
             }
             //AudioManager.Instance.PlayVictory();
 
-            if (TestRecordManager.Instance != null && TestRecordManager.Instance.TryFinalizeRecording())
+            if (!Application.isBatchMode
+                && TestRecordManager.Instance != null
+                && TestRecordManager.Instance.TryFinalizeRecording())
             {
                 return;
             }

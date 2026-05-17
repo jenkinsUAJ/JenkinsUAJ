@@ -251,7 +251,7 @@ public class PlayLevelsTest
         }
         finally
         {
-            TestRecordManager.DisableReadOnlyModeForTests();
+            TestRecordManager.ResetForTests();
         }
     }
 
