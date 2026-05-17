@@ -86,7 +86,7 @@ pipeline {
              steps {
                 echo "Ejecutando tests Long"
                 bat '''
-                %UNITY_PATH% -batchmode -quit -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform PlayMode -testCategory Long -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/long-results.xml" -testResultsFormatter junit -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/long.log" 
+                %UNITY_PATH% -batchmode -projectPath "%WORKSPACE%/ChronoPunk" -runTests -testPlatform PlayMode -testCategory Long -testResults "%WORKSPACE%/Builds/%BUILD_NUMBER%/long-results.xml" -testResultsFormatter junit -logFile "%WORKSPACE%/Builds/%BUILD_NUMBER%/long.log" 
                 '''
             }
             post {
